@@ -13,13 +13,13 @@ return array(
 	'server' => 'localhost',
 
 	// The name of the database to select.
-	'database' => 'mc-web',
+	'database' => 'mc-site',
 
 	// The database username to connect with.
-	'user' => 'mc-web',
+	'user' => 'mc-site',
 
 	// The database password to connect with.
-	'password' => '7SH3q#ZiABqJ',
+	'password' => 'mc-site',
 
 	// The prefix to use when naming tables. This can be no more than 5 characters.
 	'tablePrefix' => 'craft',
