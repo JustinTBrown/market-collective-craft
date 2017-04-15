@@ -1,8 +1,8 @@
 {
      "require": {
-         "php": "5.3.29",
+         "php": "5.3.29"
          // "vlucas/bulletphp": "~1.3.x"
-     },
+     }
      // "extra": {
      //     "heroku": {
      //         "framework": "slim",
