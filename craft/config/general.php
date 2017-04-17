@@ -8,26 +8,32 @@
  */
 
 return array(
-
-    // Base site URL
-    // 'siteUrl' => null,
-
-    // Environment-specific variables (see https://craftcms.com/docs/multi-environment-configs#environment-specific-variables)
-    'environmentVariables' => array(),
-
-    // Default Week Start Day (0 = Sunday, 1 = Monday...)
-    'defaultWeekStartDay' => 0,
-
-    // Enable CSRF Protection (recommended, will be enabled by default in Craft 3)
+  // General
+  '*' => array(
+    'defaultWeekStartDay' => 1,
     'enableCsrfProtection' => true,
-
-    // Whether "index.php" should be visible in URLs (true, false, "auto")
     'omitScriptNameInUrls' => 'auto',
-
-    // Control Panel trigger word
     'cpTrigger' => 'admin',
+  ),
+  
+  // Local Machine
+  'localhost' => array(
+    'devMode' => true,
+    // 'siteUrl' => 'http://localhost:8888/',
+    'environmentVariables' => array(
+      // 'basePath' => '/users/eugene/Sites/craft-project/html/',
+      // 'baseUrl'  => 'http://localhost:8888/',
+    ),
+    'testToEmailAddress' => 'jb@justinbrown.io',
+  ),
 
-	// Dev Mode (see https://craftcms.com/support/dev-mode)
-	'devMode' => false,
-
+  // Development
+  '162.243.199.96' => array(
+    'devMode' => true,
+    'siteUrl' => 'http://162.243.199.96/',
+    'environmentVariables' => array(
+      'basePath' => '/var/www/public/',
+      'baseUrl'  => 'http://162.243.199.96/',
+    )
+  )
 );
