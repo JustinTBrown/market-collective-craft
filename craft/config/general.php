@@ -22,11 +22,13 @@ return array(
     // 'siteUrl' => array(
     //   'en' => 'mc-site.dev:8888'
     // ),
-    'siteUrl' => 'http://' . $_SERVER['SERVER_NAME'],
+    // 'siteUrl' => 'http://' . $_SERVER['SERVER_NAME'],
     'environmentVariables' => array(
+      'siteUrl'  => '/',
       // 'siteUrl' => 'mc-site.dev:8888/',
       'basePath' => '/users/justinbrown/web/mc-site/public/',
-      'baseUrl'  => 'http://mc-site.dev:8888/',
+      // 'baseUrl'  => 'http://mc-site.dev:8888/',
+      'baseUrl'  => '/',
     ),
     'testToEmailAddress' => 'jb@justinbrown.io',
   ),
@@ -37,12 +39,13 @@ return array(
     // 'siteUrl' => array(
     //   'en' => 'http://162.243.199.96/'
     // ),
-    'siteUrl' => 'http://162.243.199.96/',
+    // 'siteUrl' => 'http://162.243.199.96/',
     'environmentVariables' => array(
       // 'siteUrl' => 'http://' . $_SERVER['SERVER_NAME'],
-      'siteUrl' => 'http://162.243.199.96/',
+      // 'siteUrl' => 'http://162.243.199.96/',
       'basePath' => '/var/www/public/',
-      'baseUrl'  => 'http://162.243.199.96/',
+      // 'baseUrl'  => 'http://162.243.199.96/',
+      'baseUrl'  => '/',
     )
   )
 );
