@@ -22,9 +22,9 @@ return array(
     // 'siteUrl' => array(
     //   'en' => 'mc-site.dev:8888'
     // ),
+    'siteUrl' => 'http://' . $_SERVER['SERVER_NAME'],
     'environmentVariables' => array(
-      // 'siteUrl' => 'http://' . $_SERVER['SERVER_NAME'],
-      'siteUrl' => 'mc-site.dev:8888',
+      // 'siteUrl' => 'mc-site.dev:8888/',
       'basePath' => '/users/justinbrown/web/mc-site/public/',
       'baseUrl'  => 'http://mc-site.dev:8888/',
     ),
@@ -37,6 +37,7 @@ return array(
     // 'siteUrl' => array(
     //   'en' => 'http://162.243.199.96/'
     // ),
+    'siteUrl' => 'http://162.243.199.96/',
     'environmentVariables' => array(
       // 'siteUrl' => 'http://' . $_SERVER['SERVER_NAME'],
       'siteUrl' => 'http://162.243.199.96/',
