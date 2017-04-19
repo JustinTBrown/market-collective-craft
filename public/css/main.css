@@ -1309,12 +1309,12 @@ section.colours ul.swatches {
 
 section.colours ul.swatches li {
   list-style: none;
-  text-align: center;
-  margin: 0 auto; }
+  text-align: center; }
 
 section.colours ul.swatches li .swatch {
   height: 100px;
-  width: 100px; }
+  width: 100px;
+  margin: 0 auto; }
 
 section.colours li[data-colour="dark-blue"] .swatch {
   background-color: #2d2769; }
