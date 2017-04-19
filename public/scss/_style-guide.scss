@@ -1,9 +1,64 @@
-// h1 {
-//   // color: #3f3;
-//   color: red;
-// }
-
 section.colours {
-  @include grid-row;
+  ul.swatches {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      text-align: center;
+      margin: 0 auto;
+
+      .swatch {
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+
+  li[data-colour="dark-blue"] {
+    .swatch {
+      background-color: $dark-blue;
+    }
+  }
+    li[data-colour="grey"] {
+    .swatch {
+      background-color: $grey;
+    }
+  }
+    li[data-colour="pink"] {
+    .swatch {
+      background-color: $pink;
+    }
+  }
+    li[data-colour="purple"] {
+    .swatch {
+      background-color: $purple;
+    }
+  }
+    li[data-colour="yellow"] {
+    .swatch {
+      background-color: $yellow;
+    }
+  }
+    li[data-colour="aqua"] {
+    .swatch {
+      background-color: $aqua;
+    }
+  }
+    li[data-colour="light-aqua"] {
+    .swatch {
+      background-color: $light-aqua;
+    }
+  }
+    li[data-colour="lavender"] {
+    .swatch {
+      background-color: $lavender;
+      // background-color: red;
+    }
+  }
+    li[data-colour="orange"] {
+    .swatch {
+      background-color: $orange;
+    }
+  }
 }
 

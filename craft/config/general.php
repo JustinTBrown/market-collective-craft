@@ -14,6 +14,7 @@ return array(
     'enableCsrfProtection' => true,
     'omitScriptNameInUrls' => 'auto',
     'cpTrigger' => 'admin',
+    'timezone' => 'America/Edmonton',
   ),
   
   // Local Machine

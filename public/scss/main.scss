@@ -1,13 +1,8 @@
 @charset 'utf-8';
 
-// @import 'settings';
-@import 'global';
-@import 'typography';
-// @import 'mixins';
 @import "foundation";
-// @import 'motion-ui';
 
-// @include foundation-global-styles;
+@include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
 // @include foundation-typography;
@@ -53,4 +48,9 @@
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
+@import 'settings';
+@import 'global';
+@import 'typography';
+// @import 'mixins';
+// @import 'motion-ui';
 @import 'style-guide';
