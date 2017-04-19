@@ -29,7 +29,8 @@ return array(
   ),
 
   // Development - Digital Ocean
-  '162.243.199.96' => array(
+  // '162.243.199.96' => array(
+  'mc.generalweb.co' => array(
     'devMode' => true,
     'environmentVariables' => array(
       'siteUrl'  => '/',
