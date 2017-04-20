@@ -13,6 +13,7 @@
      * 3. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:400,500,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1304,41 +1305,124 @@ pre {
   .column-block > :last-child {
     margin-bottom: 0; } }
 
-section.colours ul.swatches {
+body {
+  color: #2d2769;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; }
+
+.section-title {
+  color: #c9a6ce;
+  font-size: 1.5rem;
+  font-weight: 900; }
+
+.article-title {
+  font-size: 1.25rem;
+  font-weight: 700; }
+
+.block-title {
+  font-size: 1.125rem;
+  font-weight: 900; }
+
+p, a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400; }
+
+a {
+  color: #ef707c; }
+
+a:hover, a:focus {
+  color: #FFBDB9; }
+
+.intro-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400; }
+
+.tiny-label,
+.small-label,
+.medium-label,
+.large-label,
+.xlarge-label {
+  font-weight: 500; }
+
+.tiny-label {
+  font-size: 0.5rem; }
+
+.small-label {
+  font-size: 0.75rem; }
+
+.medium-label {
+  font-size: 0.875rem; }
+
+.large-label {
+  font-size: 0.875rem;
+  font-weight: 700; }
+
+.xlarge-label {
+  font-size: 1rem; }
+
+.style-guide h1.sg {
+  color: #000;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem; }
+
+.style-guide h2.sg {
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem; }
+
+.style-guide .sg-label {
+  color: #000; }
+
+.style-guide section.colours ul.swatches {
   padding-left: 0; }
 
-section.colours ul.swatches li {
+.style-guide section.colours ul.swatches li {
   list-style: none;
   text-align: center; }
 
-section.colours ul.swatches li .swatch {
+.style-guide section.colours ul.swatches li .swatch {
   height: 100px;
   width: 100px;
   margin: 0 auto; }
 
-section.colours li[data-colour="dark-blue"] .swatch {
+.style-guide section.colours li[data-colour="dark-blue"] .swatch {
   background-color: #2d2769; }
 
-section.colours li[data-colour="grey"] .swatch {
+.style-guide section.colours li[data-colour="grey"] .swatch {
   background-color: #b5b3b3; }
 
-section.colours li[data-colour="pink"] .swatch {
+.style-guide section.colours li[data-colour="pink"] .swatch {
   background-color: #ef707c; }
 
-section.colours li[data-colour="purple"] .swatch {
+.style-guide section.colours li[data-colour="light-pink"] .swatch {
+  background-color: #FFBDB9; }
+
+.style-guide section.colours li[data-colour="purple"] .swatch {
   background-color: #913b99; }
 
-section.colours li[data-colour="yellow"] .swatch {
+.style-guide section.colours li[data-colour="yellow"] .swatch {
   background-color: #fbda51; }
 
-section.colours li[data-colour="aqua"] .swatch {
+.style-guide section.colours li[data-colour="aqua"] .swatch {
   background-color: #29b2c3; }
 
-section.colours li[data-colour="light-aqua"] .swatch {
+.style-guide section.colours li[data-colour="light-aqua"] .swatch {
   background-color: #b9dbd3; }
 
-section.colours li[data-colour="lavender"] .swatch {
+.style-guide section.colours li[data-colour="lavender"] .swatch {
+  background-color: #c9a6ce; }
+
+.style-guide section.colours li[data-colour="light-lavender"] .swatch {
   background-color: #f0e9f4; }
 
-section.colours li[data-colour="orange"] .swatch {
+.style-guide section.colours li[data-colour="orange"] .swatch {
   background-color: #f49732; }

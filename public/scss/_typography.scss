@@ -1,0 +1,97 @@
+// Base text colour dark-blue, a pink, a:hover light pink
+// Section Title - Playfair Display Black - 24pt
+// Article Title - Playfair Display Bold - 20pt
+// Block Title - Playfair Display Black - 18pt
+// Tags - Rubik Regular - 11pt
+// Body - Rubik Regular - 14pt
+// Intro Text - Playfair Display Regular - 24pt
+// Tine Label - Rubik Medium - 8pt
+// Small Label - Rubik Medium - 12pt
+// Medium Label - Rubik Medium - 14pt
+// Large Label - Rubik Bold - 14pt
+// X-Large Label - Rubik Medium - 16pt
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:400,500,700');
+$heading-font: 'Playfair Display', serif;
+$body-font: 'Rubik', sans-serif;
+
+body {
+  color: $dark-blue;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  font-weight: 700;
+}
+
+.section-title,
+.article-title,
+.block-title {
+  // font-family: $heading-font;
+}
+
+.section-title {
+  color: $lavender;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.article-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.block-title {
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+p, a {
+  font-family: $body-font;
+  font-weight: 400;
+}
+
+a {
+  color: $pink;
+
+  &:hover,
+  &:focus {
+    color: $light-pink;
+  }
+}
+
+.intro-text {
+  font-family: $heading-font;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.tiny-label,
+.small-label,
+.medium-label,
+.large-label,
+.xlarge-label {
+  font-weight: 500;
+}
+
+.tiny-label {
+  font-size: 0.5rem;
+}
+.small-label {
+  font-size: 0.75rem;
+}
+.medium-label {
+  font-size: 0.875rem;
+}
+.large-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.xlarge-label {
+  font-size: 1rem;
+}
+

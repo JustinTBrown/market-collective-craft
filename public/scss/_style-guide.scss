@@ -1,64 +1,61 @@
-section.colours {
-  ul.swatches {
-    padding-left: 0;
+.style-guide {
+  // h1, h2 ,h3, h4, h5, h6 {
+  //   font-family: $body-font;
+  // }
 
-    li {
-      list-style: none;
-      text-align: center;
+  // h2 {
+  //   @extend .medium-label;
+  // }
+  h1.sg {
+    color: #000;
+    text-align: center;
+    font-family: $body-font;
+    font-size: 2rem;
+  }
 
-      .swatch {
-        height: 100px;
-        width: 100px;
-        margin: 0 auto;
+  h2.sg {
+    color: #000;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 1.25rem;
+    // color: red;
+  }
+
+  .sg-label {
+    color: #000;
+  }
+
+  section.colours {
+    ul.swatches {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+        text-align: center;
+
+        .swatch {
+          height: 100px;
+          width: 100px;
+          margin: 0 auto;
+        }
       }
     }
+
+    li[data-colour="dark-blue"] { .swatch { background-color: $dark-blue; }}
+    li[data-colour="grey"] { .swatch { background-color: $grey; }}
+    li[data-colour="pink"] { .swatch { background-color: $pink; }}
+    li[data-colour="light-pink"] { .swatch { background-color: $light-pink; }}
+    li[data-colour="purple"] { .swatch { background-color: $purple; }}
+    li[data-colour="yellow"] { .swatch { background-color: $yellow; }}
+    li[data-colour="aqua"] { .swatch { background-color: $aqua; }}
+    li[data-colour="light-aqua"] { .swatch { background-color: $light-aqua; }}
+    li[data-colour="lavender"] { .swatch { background-color: $lavender; }}
+    li[data-colour="light-lavender"] { .swatch { background-color: $light-lavender; }}
+    li[data-colour="orange"] { .swatch { background-color: $orange; }}
   }
 
-  li[data-colour="dark-blue"] {
-    .swatch {
-      background-color: $dark-blue;
-    }
-  }
-    li[data-colour="grey"] {
-    .swatch {
-      background-color: $grey;
-    }
-  }
-    li[data-colour="pink"] {
-    .swatch {
-      background-color: $pink;
-    }
-  }
-    li[data-colour="purple"] {
-    .swatch {
-      background-color: $purple;
-    }
-  }
-    li[data-colour="yellow"] {
-    .swatch {
-      background-color: $yellow;
-    }
-  }
-    li[data-colour="aqua"] {
-    .swatch {
-      background-color: $aqua;
-    }
-  }
-    li[data-colour="light-aqua"] {
-    .swatch {
-      background-color: $light-aqua;
-    }
-  }
-    li[data-colour="lavender"] {
-    .swatch {
-      background-color: $lavender;
-      // background-color: red;
-    }
-  }
-    li[data-colour="orange"] {
-    .swatch {
-      background-color: $orange;
-    }
-  }
+  section.typography {
+
+  }  
 }
 
