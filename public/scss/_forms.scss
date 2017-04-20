@@ -1,0 +1,62 @@
+// Overall form block styles
+.form {
+  background-color: $light-lavender;
+  padding: $space-b $space-b $space-c;
+
+  h3.section-title {
+    color: $dark-blue;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  input {
+    margin-bottom: 2rem;
+  }
+}
+
+// Individual form field styles
+[type="text"],
+[type="tel"],
+[type="email"],
+[type="url"],
+[type="radio"] {
+  border: none;
+}
+
+fieldset.radio { // Adapted from: http://codepen.io/SitePoint/pen/qhCba
+  legend {
+    margin-bottom: 1rem;
+  }
+  label {
+    display: inline-block;
+    padding-right: 2rem;
+  }
+  [type="radio"] {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px;
+  }
+  /* the basic, unchecked style */
+  [type="radio"] + span:before {
+    $radio-size: 1.3rem;
+    content: '';
+    display: inline-block;
+    width: $radio-size;
+    height: $radio-size;
+    vertical-align: -0.35em;
+    border-radius: $radio-size;
+    background-color: $white;
+    box-shadow: none;
+    margin-right: 0.75em;
+    transition: 0.4s ease all;
+  }
+  /* the checked style using the :checked pseudo class */
+  [type="radio"]:checked + span:before {
+    background-color: $dark-blue;
+    box-shadow: none;
+  }
+}

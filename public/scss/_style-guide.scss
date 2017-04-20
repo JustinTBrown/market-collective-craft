@@ -16,12 +16,22 @@
     border-bottom: solid 1px lightgrey;
     margin-bottom: 3rem;
     padding-bottom: 1rem;
+
+    &.no-line {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 2rem;
+    }
   }
 
   p.sg {
     color: #000;
     font-family: $body-font;
     font-size: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
   }
 
   section.colours {
@@ -57,9 +67,6 @@
     .body-container {
       width: 520px;
     }
-    // p {
-    //   width: 520;
-    // }
   }  
 }
 

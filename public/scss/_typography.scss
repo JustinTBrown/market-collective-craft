@@ -97,6 +97,11 @@ a {
   font-size: 1rem;
 }
 
+label, legend {
+  @extend .large-label;
+  color: $dark-blue;
+}
+
 .tag {
   // font-size: 0.75rem;
   font-size: 0.6875rem;

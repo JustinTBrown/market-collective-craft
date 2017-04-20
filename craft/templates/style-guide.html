@@ -7,6 +7,98 @@
   </head>
   <body class="style-guide">
     <h1 class="sg">MC Style Guide</h1>
+
+    <section class="headers">
+      <div class="row">
+        <h2 class="sg">Headers</h2>
+      </div>
+      <header>
+        <div class="utility-nav">
+          <div class="row">
+            <!-- utility nav -->
+          </div>
+        </div>
+        <div class="main-nav">
+          <div class="row top-bar">
+            <img src="http://dummyimage.com/380x40/4d494d/686a82.gif&text=market+collective" alt="market+collective" class="logo top-bar-left">
+            <ul class="menu align-right top-bar-right">
+              <li><a href="#" class="medium-label">About</a></li>
+              <li><a href="#" class="medium-label">Events</a></li>
+              <li><a href="#" class="medium-label">Workshops</a></li>
+              <li><a href="#" class="medium-label">Apply</a></li>
+              <li><a href="#" class="medium-label">Volunteer</a></li>
+              <li><a href="#" class="medium-label">Gallery</a></li>
+              <li><a href="#" class="medium-label">Contact</a></li>
+            </ul>        
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section class="row forms">
+      <h2 class="sg no-line">Forms</h2>
+      <div class="form row">
+        <h3 class="section-title">Application</h3>
+        <div class="medium-6 columns">
+          <label>Company name</label>
+          <input type="text" placeholder="Company name">
+        </div>
+        <div class="medium-6 columns">
+          <label>Contact name</label>
+          <input type="text" placeholder="Please allow yourself to introduce..... yourself">
+        </div>
+        <div class="medium-6 columns">
+          <label>Phone number</label>
+          <input type="tel" placeholder="eg. 403-123-4567">
+        </div>
+        <div class="medium-6 columns">
+          <label>Email</label>
+          <input type="email" placeholder="eg. info@marketcollective.com">
+        </div>
+        <div class="medium-6 columns">
+          <label>Website</label>
+          <input type="url" placeholder="eg. www.marketcollective.com">
+        </div>
+        <div class="medium-6 columns">
+          <label>Address</label>
+          <input type="text" placeholder="eg. 123 Centre Street NW, Calgary, AB">
+        </div>
+        <div class="medium-4 columns">
+          <label>Twitter handle</label>
+          <input type="text" placeholder="eg. @marketcollective">
+        </div>
+        <div class="medium-4 columns">
+          <label>Instagram handle</label>
+          <input type="text" placeholder="eg. @marketcollective">
+        </div>
+        <div class="medium-4 columns">
+          <label>Facebook URL</label>
+          <input type="text" placeholder="eg. facebook.com/marketcollective">
+        </div>
+        <div class="small-12 columns">
+<!--           <label>Table or booth size you wish to apply for?
+            <select>
+              <option value="1">Table</option>
+              <option value="2">10 x 6 booth</option>
+              <option value="3">10 x 10 booth</option>
+            </select>
+          </label> -->
+          <fieldset class="radio">
+            <legend>Table or booth size you wish to apply for?</legend>
+            <label for="1"><input type="radio" value="1" id="1" name="quality"><span>Table</span></label>
+            <label for="2"><input type="radio" value="2" id="2" name="quality"><span>10 x 6 booth</span></label>
+            <label for="3"><input type="radio" value="3" id="3" name="quality"><span>10 x 10 booth</span></label>
+
+<!--             <input type="radio" value="2"><label for="">10 x 6 booth</label></input>
+            <input type="radio" value="3"><label for="">10 x 10 booth</label></input>
+            <label for="accessible">
+              <input type="radio" value="accessible" name="quality" id="accessible"> <span>accessible</span>
+            </label> -->
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
     <section class="row colours">
       <h2 class="sg">Colours</h2>
       <ul class="row small-up-2 medium-up-4 large-up-8 swatches">
@@ -78,6 +170,7 @@
         </li>
       </ul>
     </section>
+
     <section class="row typography">
       <h2 class="sg">Typography</h2>
       <div class="body-container">
@@ -93,5 +186,6 @@
         Intro text style type. Always centered.
       </p>
     </section>
+
   </body>
 </html>

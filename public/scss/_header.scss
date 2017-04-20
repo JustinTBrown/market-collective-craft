@@ -1,0 +1,50 @@
+header {
+  .utility-nav {
+    
+  }
+  .main-nav {
+    border-bottom: solid 1px $aqua;
+    padding: 1rem;
+    
+    .top-bar {
+      background-color: $white;
+      position: relative;
+
+      .top-bar-right {
+        right: 0;
+      }
+      ul {
+        @include vertical-center;
+        background-color: $white;
+        li {
+          margin: 0.7rem 1rem;
+          position: relative; // needed for :after underline
+
+          a{
+            color: $dark-blue;
+            padding: 0;
+            text-transform: uppercase;
+
+            &:hover {
+              &:after {
+                display: block;
+                position: absolute;
+                bottom: -0.4rem;
+                left: 0%;
+                width: 100%;
+                height: 2px;
+                background-color: $dark-blue;
+                content: "";
+                transition: all 0.2s ease-in;
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      // float: left;
+    }
+  }
+}
