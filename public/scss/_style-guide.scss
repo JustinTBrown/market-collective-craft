@@ -1,28 +1,27 @@
 .style-guide {
-  // h1, h2 ,h3, h4, h5, h6 {
-  //   font-family: $body-font;
-  // }
 
-  // h2 {
-  //   @extend .medium-label;
-  // }
-  h1.sg {
+  h1.sg, h2.sg {
     color: #000;
+    font-family: $body-font;
+  }
+  h1.sg {
+    font-size: 2rem;
     text-align: center;
     font-family: $body-font;
-    font-size: 2rem;
   }
 
   h2.sg {
-    color: #000;
-    font-family: $body-font;
     font-weight: 700;
     font-size: 1.25rem;
-    // color: red;
+    border-bottom: solid 1px lightgrey;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 
-  .sg-label {
+  p.sg {
     color: #000;
+    font-family: $body-font;
+    font-size: 1rem;
   }
 
   section.colours {
@@ -55,7 +54,12 @@
   }
 
   section.typography {
-
+    .body-container {
+      width: 520px;
+    }
+    // p {
+    //   width: 520;
+    // }
   }  
 }
 
