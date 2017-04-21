@@ -1,4 +1,5 @@
 .style-guide {
+  padding-top: 3rem;
 
   h1.sg, h2.sg {
     color: #000;
@@ -23,6 +24,10 @@
       margin-bottom: 2rem;
     }
   }
+  h3.sg {
+    font-weight: 700;
+    font-size: 1rem;
+  }
 
   p.sg {
     color: #000;
@@ -31,7 +36,18 @@
   }
 
   section {
-    padding: 2rem 0;
+    padding: 3rem 0;
+  }
+
+  section.headers {
+    h2.sg.no-line {
+      margin-top: 6rem;
+      margin-bottom: 1rem;
+    }
+
+    header {
+      border-top: solid 1px lightgrey;
+    }
   }
 
   section.colours {

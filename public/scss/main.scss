@@ -6,7 +6,7 @@
 @include foundation-grid;
 // @include foundation-flex-grid;
 // @include foundation-typography;
-// @include foundation-button;
+@include foundation-button;
 @include foundation-forms;
 // @include foundation-range-input;
 // @include foundation-accordion;
@@ -53,6 +53,7 @@
 @import 'typography';
 // @import 'mixins';
 // @import 'motion-ui';
+@import 'buttons';
 @import 'header';
 @import 'forms';
 @import 'style-guide';

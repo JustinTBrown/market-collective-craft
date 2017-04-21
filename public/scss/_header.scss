@@ -1,6 +1,48 @@
 header {
   .utility-nav {
+    margin-top: 1rem;
     
+    .container {
+      display: inline-block;
+      float: right;
+
+      .newsletter {
+        display: inline-block;
+
+        label {
+          display: inline-block;
+        }
+        input[type="email"] {
+          color: $white;
+          display: inline-block;
+          width: 150px;
+          background-color: $light-aqua;
+          height: 1.5em;
+          margin-bottom: 0;
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+        a.button {
+          background-color: $aqua;
+          padding-bottom: 0;
+          padding-top: 0.5em;
+          height: 16px;
+          display: inline-block;
+          margin-bottom: -2px;
+        }
+      }
+      .social {
+        display: inline-block;
+        margin-left: 2rem;
+
+        img {
+          margin-bottom: -2px;
+        }
+      }
+      
+    }
   }
   .main-nav {
     border-bottom: solid 1px $aqua;
