@@ -1,92 +1,174 @@
 header {
-  .utility-nav {
-    margin-top: 1rem;
-    
-    .container {
-      display: inline-block;
-      float: right;
+  .title-bar {
+    height: 3rem;
+    background-color: $white;
+    position: relative;
+    border-bottom: solid 1px lightgray;
+    // margin-top: $space-a;
 
-      .newsletter {
-        display: inline-block;
+    .title-bar-title {
+      @include vertical-center;
+    }
+    button.menu-icon {
+      @include vertical-center;
+      // background-color: #000;
+      // margin-top: 0.15em;
+      // float: right;
+      right: 0.5rem;
 
-        label {
-          display: inline-block;
-        }
-        input[type="email"] {
-          color: $white;
-          display: inline-block;
-          width: 150px;
-          background-color: $light-aqua;
-          height: 1.5em;
-          margin-bottom: 0;
-
-          &::placeholder {
-            color: $white;
-          }
-        }
-        a.button {
-          background-color: $aqua;
-          padding-bottom: 0;
-          padding-top: 0.5em;
-          height: 16px;
-          display: inline-block;
-          margin-bottom: -2px;
-        }
+      &::after {
+        background-color: #000;
+        // box-shadow: #000;
+        box-shadow: 0 7px 0 black, 0 14px 0 black;
       }
-      .social {
-        display: inline-block;
-        margin-left: 2rem;
+    }
+  }
+  .top-bar {
+    border-bottom: solid 1px $aqua;
+    padding: 1rem 1rem 2rem;
+    background-color: $white;
 
-        img {
-          margin-bottom: -2px;
+    &#mc-menu-no-scroll {
+      padding: 1rem;
+    }
+    .utility-nav {
+      // margin-top: $space-a;
+      margin-bottom: $space-a;
+
+      .row {
+        @include breakpoint( medium ) {
+          // float: none;
+          text-align: center;
+        }
+        @include breakpoint( xlarge ) {
+          // float: right;
         }
       }
       
-    }
-  }
-  .main-nav {
-    border-bottom: solid 1px $aqua;
-    padding: 1rem;
-    
-    .top-bar {
-      background-color: $white;
-      position: relative;
+      .container {
+        display: inline-block;
+        float: right;
 
-      .top-bar-right {
-        right: 0;
+        @include breakpoint( medium ) {
+          float: none;
+          // text-align: center;
+        }
+        @include breakpoint( xlarge ) {
+          float: right;
+        }
+
+        .newsletter {
+          display: inline-block;
+
+          label {
+            display: inline-block;
+          }
+          input[type="email"] {
+            color: $white;
+            display: inline-block;
+            width: 150px;
+            background-color: $light-aqua;
+            height: 1.5em;
+            margin-bottom: 0;
+            margin-right: 0;
+
+            &::placeholder {
+              color: $white;
+            }
+          }
+          a.button {
+            background-color: $aqua;
+            padding-bottom: 0;
+            padding-top: 0.5em;
+            height: 16px;
+            display: inline-block;
+            margin-bottom: -2px;
+          }
+        }
+        .social {
+          display: inline-block;
+          margin-left: 2rem;
+
+          img {
+            margin-bottom: -2px;
+          }
+        }
+        
       }
-      ul {
-        @include vertical-center;
-        background-color: $white;
-        li {
-          margin: 0.7rem 1rem;
-          position: relative; // needed for :after underline
+    }
+    .main-nav {
+      .row {
+        // position: relative;
+        .top-bar-left {
+          @include breakpoint( medium ) {
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: $space-a;
+          }
+          @include breakpoint( xlarge ) {
+            text-align: left;
+            margin-bottom: 0;
+            margin-top: 0;
+          }
 
-          a{
-            color: $dark-blue;
-            padding: 0;
-            text-transform: uppercase;
 
-            &:hover {
-              &:after {
-                display: block;
-                position: absolute;
-                bottom: -0.4rem;
-                left: 0%;
-                width: 100%;
-                height: 2px;
-                background-color: $dark-blue;
-                content: "";
-                transition: all 0.2s ease-in;
-                box-sizing: border-box;
+        }
+        .top-bar-right {
+          // position: relative;
+
+          @include breakpoint(medium) {
+            // display: block;
+            // width: 100%;
+            text-align: center;
+          }
+          @include breakpoint(xlarge) {
+            // position: relative;
+            // display: block;
+            // width: 100%;
+            text-align: left;
+          }
+
+          ul.menu {
+            // @include vertical-center;
+            background-color: $white;
+            margin-top: 0.2em;
+            // right: 0;
+            right: 0.5rem;
+
+            @include breakpoint(medium) {
+              display: inline-block;
+              padding-left: 0;
+            }
+
+            li {
+              margin: 0.7rem 1rem;
+              position: relative; // needed for :after underline
+
+              a{
+                color: $dark-blue;
+                padding: 0;
+                text-transform: uppercase;
+
+                &:hover {
+                  &:after {
+                    display: block;
+                    position: absolute;
+                    bottom: -0.4rem;
+                    left: 0%;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $dark-blue;
+                    content: "";
+                    transition: all 0.2s ease-in;
+                    box-sizing: border-box;
+                  }
+                }
               }
             }
           }
         }
+        
       }
-    }
-    .logo {
-      // float: left;
     }
   }
 }

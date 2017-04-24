@@ -44,15 +44,18 @@
   }
 
   section {
-    padding: 3rem 0;
+    padding: 3rem 1rem;
   }
 
   section.headers {
-    padding-top: 0rem;
+    // padding-top: 0rem;
+    padding: 0rem 0rem 3rem;
 
     h2.sg.no-line {
       margin-top: 6rem;
       margin-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     header {

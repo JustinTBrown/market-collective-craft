@@ -4,62 +4,103 @@
     <title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
     <link rel="home" href="{{ siteUrl }}" />
     <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- <link rel="stylesheet" href="/css/main.css" /> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script src="/js/main.js"></script>
   </head>
   <body class="style-guide">
     <h1 class="sg">Style Guide</h1>
     <p class="sg subtitle">Market Collective Website</p>
 
     <section class="headers">
+      <!-- HEADER - REGULAR -->
       <h2 class="sg row no-line">Header</h2>
       <header>
-        <div class="utility-nav">
-          <div class="row">
-            <div class="container">
-              <div class="newsletter">
-                <label class="tiny-label" for="">Newsletter</label>
-                <input type="email" placeholder="Your email" class="tiny-label">
-                <a href="" class="button teenie-weenie">Sign up</a>
+        <!-- Title Bar -->
+        <div class="title-bar" data-responsive-toggle="mc-menu" data-hide-for="medium">
+          <div class="title-bar-title">
+            <img src="http://dummyimage.com/190x20/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+          </div>
+          <button class="menu-icon" type="button" data-toggle="mc-menu"></button>
+        </div>
+
+        <!-- Top -->
+        <div class="top-bar stacked-for-medium stacked-for-large" id="mc-menu">
+          <div class="utility-nav">
+            <div class="row">
+              <div class="container">
+                <div class="newsletter">
+                  <label class="tiny-label" for="">Newsletter</label>
+                  <input type="email" placeholder="Your email" class="tiny-label">
+                  <a href="" class="button teenie-weenie">Sign up</a>
+                </div>
+                <div class="social">
+                  <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=H" alt="H">
+                  <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=T" alt="T">
+                  <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=F" alt="F">
+                  <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=I" alt="I">
+                  <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=S" alt="S">
+                </div>
               </div>
-              <div class="social">
-                <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=H" alt="H">
-                <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=T" alt="T">
-                <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=F" alt="F">
-                <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=I" alt="I">
-                <img src="http://dummyimage.com/16x16/29b2c3/FFF.gif&text=S" alt="S">
+            </div>
+          </div>
+          <div class="main-nav">
+            <div class="row">
+              <div class="top-bar-left">
+                <div class="logo-container">
+                  <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+                </div>
+              </div>
+              <div class="top-bar-right">
+                <ul class="vertical medium-horizontal menu simple">
+                  <li><a href="#" class="medium-label">About</a></li>
+                  <li><a href="#" class="medium-label">Events</a></li>
+                  <li><a href="#" class="medium-label">Workshops</a></li>
+                  <li><a href="#" class="medium-label">Apply</a></li>
+                  <li><a href="#" class="medium-label">Volunteer</a></li>
+                  <li><a href="#" class="medium-label">Gallery</a></li>
+                  <li><a href="#" class="medium-label">Contact</a></li>
+                </ul>        
               </div>
             </div>
           </div>
         </div>
-        <div class="main-nav">
-          <div class="row top-bar">
-            <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo top-bar-left">
-            <ul class="menu align-right top-bar-right">
-              <li><a href="#" class="medium-label">About</a></li>
-              <li><a href="#" class="medium-label">Events</a></li>
-              <li><a href="#" class="medium-label">Workshops</a></li>
-              <li><a href="#" class="medium-label">Apply</a></li>
-              <li><a href="#" class="medium-label">Volunteer</a></li>
-              <li><a href="#" class="medium-label">Gallery</a></li>
-              <li><a href="#" class="medium-label">Contact</a></li>
-            </ul>        
-          </div>
-        </div>
       </header>
 
+      <!-- HEADER - ON SCROLL -->
       <h2 class="sg row no-line">Header - on scroll</h3>
-      <header>
-        <div class="main-nav">
-          <div class="row top-bar">
-            <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo top-bar-left">
-            <ul class="menu align-right top-bar-right">
-              <li><a href="#" class="medium-label">About</a></li>
-              <li><a href="#" class="medium-label">Events</a></li>
-              <li><a href="#" class="medium-label">Workshops</a></li>
-              <li><a href="#" class="medium-label">Apply</a></li>
-              <li><a href="#" class="medium-label">Volunteer</a></li>
-              <li><a href="#" class="medium-label">Gallery</a></li>
-              <li><a href="#" class="medium-label">Contact</a></li>
-            </ul>        
+      <header class="on-scroll">
+        <!-- Title Bar -->
+        <div class="title-bar" data-responsive-toggle="mc-menu-no-scroll" data-hide-for="medium">
+          <div class="title-bar-title">
+            <img src="http://dummyimage.com/190x20/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+          </div>
+          <button class="menu-icon" type="button" data-toggle="mc-menu-no-scroll"></button>
+        </div>
+
+        <!-- Top -->
+        <div class="top-bar stacked-for-medium stacked-for-large" id="mc-menu-no-scroll">
+          <div class="main-nav">
+            <div class="row">
+              <div class="top-bar-left">
+                <div class="logo-container">
+                  <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+                </div>
+              </div>
+              <div class="top-bar-right">
+                <ul class="vertical medium-horizontal menu simple">
+                  <li><a href="#" class="medium-label">About</a></li>
+                  <li><a href="#" class="medium-label">Events</a></li>
+                  <li><a href="#" class="medium-label">Workshops</a></li>
+                  <li><a href="#" class="medium-label">Apply</a></li>
+                  <li><a href="#" class="medium-label">Volunteer</a></li>
+                  <li><a href="#" class="medium-label">Gallery</a></li>
+                  <li><a href="#" class="medium-label">Contact</a></li>
+                </ul>        
+              </div>
+            </div>
           </div>
         </div>
       </header>

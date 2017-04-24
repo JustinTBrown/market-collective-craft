@@ -5,7 +5,10 @@ var livereload = require('gulp-livereload');
 gulp.task('sass', function () {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass({
-      includePaths: ['node_modules/foundation-sites/scss']
+      includePaths: [
+        'node_modules/foundation-sites/scss',
+        // 'node_modules/motion-ui/src'
+      ]
     }))
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./css'))
