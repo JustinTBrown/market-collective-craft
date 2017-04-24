@@ -8,7 +8,10 @@ gulp.task('sass', function () {
       includePaths: [
         'node_modules/foundation-sites/scss',
         // 'node_modules/motion-ui/src'
-      ]
+      ],
+      sourceComments: 'map',
+      sourceMap: 'sass',
+      outputStyle: 'nested'
     }))
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./css'))
