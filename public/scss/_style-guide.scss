@@ -95,6 +95,11 @@
   section.typography {
     .body-container {
       max-width: 520px;
+
+      ul.labels {
+        list-style-type: none;
+        padding-left: 0;
+      }
     }
   }  
   // TEST

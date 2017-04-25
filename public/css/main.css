@@ -3279,4 +3279,9 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
 .style-guide section.typography .body-container {
   max-width: 520px; }
 
+/* line 99, scss/_style-guide.scss */
+.style-guide section.typography .body-container ul.labels {
+  list-style-type: none;
+  padding-left: 0; }
+
 /*# sourceMappingURL=../sass */
