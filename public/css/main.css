@@ -5,6 +5,34 @@
  * Licensed under MIT Open Source
  **/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:400,500,700");
+/* line 96, node_modules/foundation-sites/scss/components/_close-button.scss */
+.close-button {
+  position: absolute;
+  color: #8a8a8a;
+  cursor: pointer; }
+
+/* line 178, node_modules/foundation-sites/scss/util/_mixins.scss */
+[data-whatinput='mouse'] .close-button {
+  outline: 0; }
+
+/* line 89, node_modules/foundation-sites/scss/components/_close-button.scss */
+.close-button:hover, .close-button:focus {
+  color: #0a0a0a; }
+
+/* line 99, node_modules/foundation-sites/scss/components/_close-button.scss */
+.close-button.small {
+  right: 0.66rem;
+  top: 0.33em;
+  font-size: 1.5em;
+  line-height: 1; }
+
+/* line 100, node_modules/foundation-sites/scss/components/_close-button.scss */
+.close-button, .close-button.medium {
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 2em;
+  line-height: 1; }
+
 /* line 257, node_modules/foundation-sites/scss/components/_menu.scss */
 .menu {
   margin: 0;
@@ -3800,76 +3828,79 @@ fieldset.radio [type="radio"]:checked + span:before {
 #mobile-menu button.close-button {
   font-size: 3rem;
   color: #2d2769;
-  font-weight: 300; }
+  font-weight: 300;
+  top: auto;
+  right: auto;
+  position: relative; }
 
-/* line 114, scss/_header.scss */
+/* line 117, scss/_header.scss */
 header .title-bar {
   height: 3rem;
   background-color: #fff;
   position: relative;
   border-bottom: solid 1px lightgray; }
 
-/* line 121, scss/_header.scss */
+/* line 124, scss/_header.scss */
 header .title-bar .title-bar-title {
   position: absolute;
   top: 50%;
   transform: translateY(-50%); }
 
-/* line 124, scss/_header.scss */
+/* line 127, scss/_header.scss */
 header .title-bar button.menu-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0.5rem; }
 
-/* line 131, scss/_header.scss */
+/* line 134, scss/_header.scss */
 header .title-bar button.menu-icon::after {
   background-color: #000;
   box-shadow: 0 7px 0 black, 0 14px 0 black; }
 
-/* line 138, scss/_header.scss */
+/* line 141, scss/_header.scss */
 header .top-bar {
   border-bottom: solid 1px #29b2c3;
   padding: 1rem 1rem 2rem;
   background-color: #fff; }
 
-/* line 151, scss/_header.scss */
+/* line 154, scss/_header.scss */
 header .top-bar#mc-menu-no-scroll {
   padding: 1rem; }
 
-/* line 154, scss/_header.scss */
+/* line 157, scss/_header.scss */
 header .top-bar .utility-nav {
   margin-bottom: 1rem; }
 
 @media print, screen and (min-width: 40em) {
-  /* line 158, scss/_header.scss */
+  /* line 161, scss/_header.scss */
   header .top-bar .utility-nav .row {
     text-align: center; } }
 
-/* line 168, scss/_header.scss */
+/* line 171, scss/_header.scss */
 header .top-bar .utility-nav .container {
   display: inline-block;
   float: right; }
 
 @media print, screen and (min-width: 40em) {
-  /* line 168, scss/_header.scss */
+  /* line 171, scss/_header.scss */
   header .top-bar .utility-nav .container {
     float: none; } }
 
 @media screen and (min-width: 75em) {
-  /* line 168, scss/_header.scss */
+  /* line 171, scss/_header.scss */
   header .top-bar .utility-nav .container {
     float: right; } }
 
-/* line 180, scss/_header.scss */
+/* line 183, scss/_header.scss */
 header .top-bar .utility-nav .container .newsletter {
   display: inline-block; }
 
-/* line 183, scss/_header.scss */
+/* line 186, scss/_header.scss */
 header .top-bar .utility-nav .container .newsletter label {
   display: inline-block; }
 
-/* line 186, scss/_header.scss */
+/* line 189, scss/_header.scss */
 header .top-bar .utility-nav .container .newsletter input[type="email"] {
   color: #fff;
   display: inline-block;
@@ -3879,11 +3910,11 @@ header .top-bar .utility-nav .container .newsletter input[type="email"] {
   margin-bottom: 0;
   margin-right: 0; }
 
-/* line 195, scss/_header.scss */
+/* line 198, scss/_header.scss */
 header .top-bar .utility-nav .container .newsletter input[type="email"]::placeholder {
   color: #fff; }
 
-/* line 199, scss/_header.scss */
+/* line 202, scss/_header.scss */
 header .top-bar .utility-nav .container .newsletter a.button {
   background-color: #29b2c3;
   padding-bottom: 0;
@@ -3892,70 +3923,70 @@ header .top-bar .utility-nav .container .newsletter a.button {
   display: inline-block;
   margin-bottom: -2px; }
 
-/* line 208, scss/_header.scss */
+/* line 211, scss/_header.scss */
 header .top-bar .utility-nav .container .social {
   display: inline-block;
   margin-left: 2rem; }
 
-/* line 212, scss/_header.scss */
+/* line 215, scss/_header.scss */
 header .top-bar .utility-nav .container .social a {
   display: inline-block;
   text-align: center; }
 
-/* line 216, scss/_header.scss */
+/* line 219, scss/_header.scss */
 header .top-bar .utility-nav .container .social .icon svg {
   max-height: 1rem;
   max-width: 1.1rem;
   margin-bottom: -0.4rem; }
 
 @media print, screen and (min-width: 40em) {
-  /* line 228, scss/_header.scss */
+  /* line 231, scss/_header.scss */
   header .top-bar .main-nav .row .top-bar-left {
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 1rem; } }
 
 @media screen and (min-width: 75em) {
-  /* line 228, scss/_header.scss */
+  /* line 231, scss/_header.scss */
   header .top-bar .main-nav .row .top-bar-left {
     text-align: left;
     margin-bottom: 0;
     margin-top: 0; } }
 
 @media print, screen and (min-width: 40em) {
-  /* line 242, scss/_header.scss */
+  /* line 245, scss/_header.scss */
   header .top-bar .main-nav .row .top-bar-right {
     text-align: center; } }
 
 @media screen and (min-width: 75em) {
-  /* line 242, scss/_header.scss */
+  /* line 245, scss/_header.scss */
   header .top-bar .main-nav .row .top-bar-right {
     text-align: left; } }
 
-/* line 257, scss/_header.scss */
+/* line 260, scss/_header.scss */
 header .top-bar .main-nav .row .top-bar-right ul.menu {
   background-color: #fff;
   margin-top: 0.2em;
   right: 0.5rem; }
 
 @media print, screen and (min-width: 40em) {
-  /* line 257, scss/_header.scss */
+  /* line 260, scss/_header.scss */
   header .top-bar .main-nav .row .top-bar-right ul.menu {
     display: inline-block;
     padding-left: 0; } }
 
-/* line 269, scss/_header.scss */
+/* line 272, scss/_header.scss */
 header .top-bar .main-nav .row .top-bar-right ul.menu li {
   margin: 0.7rem 1rem;
   position: relative; }
 
-/* line 273, scss/_header.scss */
+/* line 276, scss/_header.scss */
 header .top-bar .main-nav .row .top-bar-right ul.menu li a {
   color: #2d2769;
   padding: 0;
   text-transform: uppercase; }
 
-/* line 279, scss/_header.scss */
+/* line 282, scss/_header.scss */
 header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
   display: block;
   position: absolute;
@@ -3969,7 +4000,7 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
   box-sizing: border-box; }
 
 @media screen and (min-width: 75em) {
-  /* line 269, scss/_header.scss */
+  /* line 272, scss/_header.scss */
   header .top-bar .main-nav .row .top-bar-right ul.menu li {
     margin: 0.7rem 0rem 0.7rem 2rem; } }
 
