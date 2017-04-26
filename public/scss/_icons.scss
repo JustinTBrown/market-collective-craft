@@ -2,6 +2,32 @@
   max-height: 3rem;
   max-width: 3rem
 }
+svg {
+  path#heart {
+    stroke: $aqua;
+  }
+  path#twitter,
+  path#facebook,
+  g#instagram,
+  g#search {
+    fill: $aqua;
+  }
+
+  &:hover {
+    path#heart {
+      stroke: $pink;
+      fill: $pink;
+    }
+    path#twitter,
+    path#facebook,
+    g#instagram,
+    g#search {
+      fill: $pink;
+    }
+  }
+}
+
+
 
 g#news {
   fill: $aqua;

@@ -89,8 +89,13 @@ header {
           display: inline-block;
           margin-left: 2rem;
 
-          img {
-            margin-bottom: -2px;
+          a {
+            text-align: center;
+          }
+          .icon svg {
+            max-height: 1rem;
+            max-width: 1rem;
+            margin-bottom: -0.4rem;
           }
         }
         
@@ -163,6 +168,10 @@ header {
                     box-sizing: border-box;
                   }
                 }
+              }
+
+              @include breakpoint( xlarge ) {
+                margin: 0.7rem 0rem 0.7rem 2rem;
               }
             }
           }
