@@ -92,6 +92,15 @@
     li[data-colour="orange"] { .swatch { background-color: $orange; }}
   }
 
+  section.icons {
+    ul {
+      padding-left: 0;
+      li.icon {
+        text-align: center;
+      }
+    }
+  }
+
   section.typography {
     .body-container {
       max-width: 520px;

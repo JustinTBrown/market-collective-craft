@@ -270,14 +270,39 @@
     </section>
 
     <section class="row icons">
-      <ul>
-        <li class="news">{% include 'icons/news' %}</li>
-        {# <li class="news"><?php echo file_get_contents("images/news.svg"); ?></li> #}
-        <li class=""></li>
-        <li class=""></li>
-        <li class=""></li>
-        <li class=""></li>
-        <li class=""></li>
+      <h2 class="sg">Icons</h2>
+      <ul class="menu expanded">
+        {# <li class="icon news">{% include 'icons/news' %}</li> #}
+        {# <li class="icon news">{{ fetch('images/newsEvents.svg') }}</li> #}
+        <li class="icon news">
+          {{ fetch('images/news.svg') }}
+          <p>News</p>
+        </li>
+        {# <li class="icon news"><?php echo file_get_contents("images/news.svg"); ?></li> #}
+        <li class="icon music">
+          {{ fetch('images/music.svg') }}
+          <p>Music</p>
+        </li>
+        <li class="icon food">
+          {{ fetch('images/food.svg') }}
+          <p>Food</p>
+        </li>
+        <li class="icon artists">
+          {{ fetch('images/artists.svg') }}
+          <p>Artists</p>
+        </li>
+        <li class="icon events">
+          {{ fetch('images/events.svg') }}
+          <p>Events</p>
+        </li>
+        <li class="icon volunteers">
+          {{ fetch('images/volunteers.svg') }}
+          <p>Volunteers</p>
+        </li>
+        <li class="icon photobooth">
+          {{ fetch('images/photobooth.svg') }}
+          <p>Photobooth</p>
+        </li>
       </ul>
     </section>
 

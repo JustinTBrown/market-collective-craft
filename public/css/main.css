@@ -2904,6 +2904,39 @@ label, legend {
   color: #913b99;
   text-decoration: underline; }
 
+/* line 1, scss/_icons.scss */
+.icon svg {
+  max-height: 3rem;
+  max-width: 3rem; }
+
+/* line 6, scss/_icons.scss */
+g#news {
+  fill: #29b2c3; }
+
+/* line 10, scss/_icons.scss */
+g#music {
+  fill: #ef707c; }
+
+/* line 14, scss/_icons.scss */
+g#food {
+  fill: #f49732; }
+
+/* line 18, scss/_icons.scss */
+g#artists {
+  fill: #913b99; }
+
+/* line 22, scss/_icons.scss */
+g#events {
+  fill: #2d2769; }
+
+/* line 26, scss/_icons.scss */
+g#volunteers {
+  fill: #29b2c3; }
+
+/* line 30, scss/_icons.scss */
+g#photobooth {
+  fill: #fbda51; }
+
 /* line 1, scss/_buttons.scss */
 .button {
   background-color: #ef707c;
@@ -3276,10 +3309,18 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
   background-color: #f49732; }
 
 /* line 96, scss/_style-guide.scss */
+.style-guide section.icons ul {
+  padding-left: 0; }
+
+/* line 98, scss/_style-guide.scss */
+.style-guide section.icons ul li.icon {
+  text-align: center; }
+
+/* line 105, scss/_style-guide.scss */
 .style-guide section.typography .body-container {
   max-width: 520px; }
 
-/* line 99, scss/_style-guide.scss */
+/* line 108, scss/_style-guide.scss */
 .style-guide section.typography .body-container ul.labels {
   list-style-type: none;
   padding-left: 0; }
