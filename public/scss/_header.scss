@@ -1,3 +1,115 @@
+#mobile-menu {
+  background-color: $light-aqua;
+  // height: 100vh;
+  padding: 2.5rem 1rem 2rem;
+  text-align: center;
+
+  .social {
+    margin-bottom: 2.5rem;
+
+    a {
+      display: inline-block;
+      margin: 0 0.4rem;
+    }
+
+    a.icon svg {
+      max-height: 1.5rem;
+      max-width: 1.5rem;
+    }
+
+    svg {
+      path#heart {
+        stroke: $dark-blue;
+      }
+      path#twitter,
+      path#facebook,
+      g#instagram,
+      g#search {
+        fill: $dark-blue;
+      }
+
+      &:hover {
+        path#heart {
+          stroke: $grey;
+          fill: $grey;
+        }
+        path#twitter,
+        path#facebook,
+        g#instagram,
+        g#search {
+          fill: $grey;
+        }
+      }
+    }
+  }
+  .menu {
+    margin-bottom: 2rem;
+    padding-left: 0;
+
+    li {
+      position: relative; // needed for :after underline
+
+      a {
+        display: inline-block;
+        position: relative;
+        color: $dark-blue;
+        padding: 0;
+        text-transform: uppercase;
+        margin: 1.6rem 1rem;
+
+        &:hover {
+          &:after {
+            display: block;
+            position: absolute;
+            bottom: -0.4rem;
+            left: 0%;
+            width: 100%;
+            height: 2px;
+            background-color: $dark-blue;
+            content: "";
+            transition: all 0.2s ease-in;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+  .newsletter {
+    display: inline-block;
+    margin-bottom: 2rem;
+
+    label {
+      display: inline-block;
+    }
+    input[type="email"] {
+      color: $white;
+      display: inline-block;
+      width: 150px;
+      background-color: $white;
+      height: 1.5em;
+      margin-bottom: 0;
+      margin-right: 0;
+
+      &::placeholder {
+        color: $light-aqua;
+      }
+    }
+    a.button {
+      background-color: $aqua;
+      padding-bottom: 0;
+      padding-top: 0.5em;
+      height: 16px;
+      display: inline-block;
+      margin-bottom: -2px;
+    }
+  }
+  button.close-button {
+    font-size: 3rem;
+    color: $dark-blue;
+    font-weight: 300;
+  }
+}
+
 header {
   .title-bar {
     height: 3rem;
@@ -27,6 +139,14 @@ header {
     border-bottom: solid 1px $aqua;
     padding: 1rem 1rem 2rem;
     background-color: $white;
+
+    @include breakpoint( small only ) {
+      // position: absolute;
+      // height: 100%;
+      // width: 100%;
+      // top: 0;
+      // left: 0;
+    }
 
     &#mc-menu-no-scroll {
       padding: 1rem;
@@ -90,11 +210,12 @@ header {
           margin-left: 2rem;
 
           a {
+            display: inline-block;
             text-align: center;
           }
           .icon svg {
             max-height: 1rem;
-            max-width: 1rem;
+            max-width: 1.1rem;
             margin-bottom: -0.4rem;
           }
         }

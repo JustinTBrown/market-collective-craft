@@ -11,341 +11,383 @@
     <script src="/js/main.js"></script>
   </head>
   <body class="style-guide">
-    <h1 class="sg">Style Guide</h1>
-    <p class="sg subtitle">Market Collective Website</p>
+    <div class="off-canvas-wrapper">
 
-    <section class="headers">
-      <!-- HEADER - REGULAR -->
-      <h2 class="sg row no-line">Header</h2>
-      <header>
-        <!-- Title Bar -->
-        <div class="title-bar" data-responsive-toggle="mc-menu" data-hide-for="medium">
-          <div class="title-bar-title">
-            <img src="http://dummyimage.com/190x20/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
-          </div>
-          <button class="menu-icon" type="button" data-toggle="mc-menu"></button>
+      {# OFF CANVAS #}
+      <div id="mobile-menu" class="off-canvas position-top" data-off-canvas>
+        <div class="social">
+          <a href="" class="icon">
+            {{ fetch('images/twitter.svg') }}
+          </a>
+          <a href="" class="icon">
+            {{ fetch('images/facebook.svg') }}
+          </a>
+          <a href="" class="icon">
+            {{ fetch('images/instagram.svg') }}
+          </a>
+          <a href="" class="icon">
+            {{ fetch('images/search.svg') }}
+          </a>
         </div>
-
-        <!-- Top -->
-        <div class="top-bar stacked-for-medium stacked-for-large" id="mc-menu">
-          <div class="utility-nav">
-            <div class="row">
-              <div class="container">
-                <div class="newsletter">
-                  <label class="tiny-label" for="">Newsletter</label>
-                  <input type="email" placeholder="Your email" class="tiny-label">
-                  <a href="" class="button teenie-weenie">Sign up</a>
-                </div>
-                <div class="social">
-                  <a href="" class="icon">
-                    {{ fetch('images/heart.svg') }}
-                  </a>
-                  <a href="" class="icon">
-                    {{ fetch('images/twitter.svg') }}
-                  </a>
-                  <a href="" class="icon">
-                    {{ fetch('images/facebook.svg') }}
-                  </a>
-                  <a href="" class="icon">
-                    {{ fetch('images/instagram.svg') }}
-                  </a>
-                  <a href="" class="icon">
-                    {{ fetch('images/search.svg') }}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="main-nav">
-            <div class="row">
-              <div class="top-bar-left">
-                <div class="logo-container">
-                  <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
-                </div>
-              </div>
-              <div class="top-bar-right">
-                <ul class="vertical medium-horizontal menu simple">
-                  <li><a href="#" class="medium-label">About</a></li>
-                  <li><a href="#" class="medium-label">Events</a></li>
-                  <li><a href="#" class="medium-label">Workshops</a></li>
-                  <li><a href="#" class="medium-label">Apply</a></li>
-                  <li><a href="#" class="medium-label">Volunteer</a></li>
-                  <li><a href="#" class="medium-label">Gallery</a></li>
-                  <li><a href="#" class="medium-label">Contact</a></li>
-                </ul>        
-              </div>
-            </div>
-          </div>
+        <ul class="vertical menu">
+          <li><a href="#" class="xlarge-label">About</a></li>
+          <li><a href="#" class="xlarge-label">Events</a></li>
+          <li><a href="#" class="xlarge-label">Workshops</a></li>
+          <li><a href="#" class="xlarge-label">Participate</a></li>
+          {# <li><a href="#" class="xlarge-label">Apply</a></li> #}
+          {# <li><a href="#" class="xlarge-label">Volunteer</a></li> #}
+          <li><a href="#" class="xlarge-label">Gallery</a></li>
+          <li><a href="#" class="xlarge-label">Contact</a></li>
+        </ul>  
+        <div class="newsletter">
+          <label class="small-label" for="">Newsletter</label>
+          <input type="email" placeholder="Your email" class="small-label">
+          <a href="" class="button teenie-weenie">Sign up</a>
         </div>
-      </header>
-
-      <!-- HEADER - ON SCROLL -->
-      <h2 class="sg row no-line">Header - on scroll</h3>
-      <header class="on-scroll">
-        <!-- Title Bar -->
-        <div class="title-bar" data-responsive-toggle="mc-menu-no-scroll" data-hide-for="medium">
-          <div class="title-bar-title">
-            <img src="http://dummyimage.com/190x20/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
-          </div>
-          <button class="menu-icon" type="button" data-toggle="mc-menu-no-scroll"></button>
-        </div>
-
-        <!-- Top -->
-        <div class="top-bar stacked-for-medium stacked-for-large" id="mc-menu-no-scroll">
-          <div class="main-nav">
-            <div class="row">
-              <div class="top-bar-left">
-                <div class="logo-container">
-                  <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
-                </div>
-              </div>
-              <div class="top-bar-right">
-                <ul class="vertical medium-horizontal menu simple">
-                  <li><a href="#" class="medium-label">About</a></li>
-                  <li><a href="#" class="medium-label">Events</a></li>
-                  <li><a href="#" class="medium-label">Workshops</a></li>
-                  <li><a href="#" class="medium-label">Apply</a></li>
-                  <li><a href="#" class="medium-label">Volunteer</a></li>
-                  <li><a href="#" class="medium-label">Gallery</a></li>
-                  <li><a href="#" class="medium-label">Contact</a></li>
-                </ul>        
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </section>
-
-    <section class="row content-blocks">
-      <h2 class="sg">Content Blocks</h2>
-      <div class="row blocks medium-up-2 large-up-4">
-        <div class="half-image-block column column-block">
-          <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-          <img src="http://dummyimage.com/15x15/4d494d/686a82.gif&text=I" alt="I">
-          <span class="small-label">News + Events</span>
-          <h2 class="block-title">Love | Music Schedule Feb 3-5</h2>
-          <p>Quisque laoreet enim sit amet feugiat fringilla. Quisque odio urna, dictum vitae neque quis, volutpat.</p>
-        </div>
-        <div class="half-image-block column column-block">
-          <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-          <img src="http://dummyimage.com/15x15/4d494d/686a82.gif&text=I" alt="I">
-          <span class="small-label">News + Events</span>
-          <h2 class="block-title">Story about a past market</h2>
-          <p>Donec quis tempus quam, non aliquet diam. Pellentesque efficitur laoreet neque, sed rutrum arcu vehicula sit.</p>
-        </div>
-        <div class="two-image-block column column-block">
-          <img src="http://dummyimage.com/800x650/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-          <img src="http://dummyimage.com/800x650/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-        </div>
-        <div class="full-image-block column column-block">
-          <img src="http://dummyimage.com/800x1500/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-        </div>
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </section>
-
-    <section class="row forms">
-      <h2 class="sg no-line">Forms</h2>
-      <div class="form row">
-        <h3 class="section-title">Application</h3>
-        <div class="medium-6 columns">
-          <label>Company name</label>
-          <input type="text" placeholder="Company name">
-        </div>
-        <div class="medium-6 columns">
-          <label>Contact name</label>
-          <input type="text" placeholder="Please allow yourself to introduce..... yourself">
-        </div>
-        <div class="medium-6 columns">
-          <label>Phone number</label>
-          <input type="tel" placeholder="eg. 403-123-4567">
-        </div>
-        <div class="medium-6 columns">
-          <label>Email</label>
-          <input type="email" placeholder="eg. info@marketcollective.com">
-        </div>
-        <div class="medium-6 columns">
-          <label>Website</label>
-          <input type="url" placeholder="eg. www.marketcollective.com">
-        </div>
-        <div class="medium-6 columns">
-          <label>Address</label>
-          <input type="text" placeholder="eg. 123 Centre Street NW, Calgary, AB">
-        </div>
-        <div class="medium-4 columns">
-          <label>Twitter handle</label>
-          <input type="text" placeholder="eg. @marketcollective">
-        </div>
-        <div class="medium-4 columns">
-          <label>Instagram handle</label>
-          <input type="text" placeholder="eg. @marketcollective">
-        </div>
-        <div class="medium-4 columns">
-          <label>Facebook URL</label>
-          <input type="text" placeholder="eg. facebook.com/marketcollective">
-        </div>
-        <div class="small-12 columns">
-<!--           <label>Table or booth size you wish to apply for?
-            <select>
-              <option value="1">Table</option>
-              <option value="2">10 x 6 booth</option>
-              <option value="3">10 x 10 booth</option>
-            </select>
-          </label> -->
-          <fieldset class="radio">
-            <legend>Table or booth size you wish to apply for?</legend>
-            <label for="1"><input type="radio" value="1" id="1" name="quality"><span>Table</span></label>
-            <label for="2"><input type="radio" value="2" id="2" name="quality"><span>10 x 6 booth</span></label>
-            <label for="3"><input type="radio" value="3" id="3" name="quality"><span>10 x 10 booth</span></label>
-
-<!--             <input type="radio" value="2"><label for="">10 x 6 booth</label></input>
-            <input type="radio" value="3"><label for="">10 x 10 booth</label></input>
-            <label for="accessible">
-              <input type="radio" value="accessible" name="quality" id="accessible"> <span>accessible</span>
-            </label> -->
-          </fieldset>
-        </div>
-      </div>
-    </section>
-
-    <section class="row colours">
-      <h2 class="sg">Colours</h2>
-      <ul class="row small-up-2 medium-up-4 large-up-8 swatches">
-        <li class="column column-block" data-colour="dark-blue">
-          <div class="swatch"></div>
-          <p class="sg name">dark-blue</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="grey">
-          <div class="swatch"></div>
-          <p class="sg name">grey</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="pink">
-          <div class="swatch"></div>
-          <p class="sg name">pink</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="light-pink">
-          <div class="swatch"></div>
-          <p class="sg name">light-pink</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="purple">
-          <div class="swatch"></div>
-          <p class="sg name">purple</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="yellow">
-          <div class="swatch"></div>
-          <p class="sg name">yellow</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="aqua">
-          <div class="swatch"></div>
-          <p class="sg name">aqua</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="light-aqua">
-          <div class="swatch"></div>
-          <p class="sg name">light-aqua</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="lavender">
-          <div class="swatch"></div>
-          <p class="sg name">lavender</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="light-lavender">
-          <div class="swatch"></div>
-          <p class="sg name">light-lavender</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-        <li class="column column-block" data-colour="orange">
-          <div class="swatch"></div>
-          <p class="sg name">orange</p>
-          <p class="sg hex"></p>
-          <p class="sg tag"></p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="row icons">
-      <h2 class="sg">Icons</h2>
-      <ul class="menu expanded">
-        {# <li class="icon news">{% include 'icons/news' %}</li> #}
-        {# <li class="icon news">{{ fetch('images/newsEvents.svg') }}</li> #}
-        <li class="icon news">
-          {{ fetch('images/news.svg') }}
-          <p>News</p>
-        </li>
-        {# <li class="icon news"><?php echo file_get_contents("images/news.svg"); ?></li> #}
-        <li class="icon music">
-          {{ fetch('images/music.svg') }}
-          <p>Music</p>
-        </li>
-        <li class="icon food">
-          {{ fetch('images/food.svg') }}
-          <p>Food</p>
-        </li>
-        <li class="icon artists">
-          {{ fetch('images/artists.svg') }}
-          <p>Artists</p>
-        </li>
-        <li class="icon events">
-          {{ fetch('images/events.svg') }}
-          <p>Events</p>
-        </li>
-        <li class="icon volunteers">
-          {{ fetch('images/volunteers.svg') }}
-          <p>Volunteers</p>
-        </li>
-        <li class="icon photobooth">
-          {{ fetch('images/photobooth.svg') }}
-          <p>Photobooth</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="row buttons">
-      <h2 class="sg">Buttons</h2>
-      <a href="" class="button teenie-weenie">Sign-up</a>
-      <!-- <a href="" class="button small">Sign-up</a> -->
-      <a href="" class="button medium">Sign-up</a>
       
-    </section>
+      {# OFF CANVAS CONTENT #}
+      <div class="off-canvas-content" data-off-canvas-content>  
+        <h1 class="sg">Style Guide</h1>
+        <p class="sg subtitle">Market Collective Website</p>
 
-    <section class="row typography">
-      <h2 class="sg">Typography</h2>
-      <div class="body-container">
-        <h1 class="section-title">Section Title</h1>
-        <h2 class="article-title">Article Title</h2>
-        <h3 class="block-title">Block Title</h3>
-        <p class="tag">Tags, colour to be determined based on cateory/icon <a href="#">Tag type on hover</a></p>
-        <p>
-          Body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sollicitudin sem, a <a href="#">scelerisque</a> mi consectetur et. Vivamus ac arcu ut <a href="#">erat</a> egestas sagittis ut et ex. Phasellus porta sem
-        </p>
-        <ul class="labels">
-          <li class="tiny-label">Tiny Label</li>
-          <li class="small-label">Small Label</li>
-          <li class="medium-label">Medium Label</li>
-          <li class="large-label">Large Label</li>
-          <li class="xlarge-label">X-Large Label</li>
-        </ul>
+        <section class="headers">
+          <!-- HEADER - REGULAR -->
+          <h2 class="sg row no-line">Header</h2>
+          <header>
+            <!-- Title Bar -->
+            <div class="title-bar" data-responsive-toggle="mc-menu" data-hide-for="medium">
+              <div class="title-bar-title">
+                <img src="http://dummyimage.com/238x25/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+              </div>
+              {# <button class="menu-icon" type="button" data-toggle="mc-menu"></button> #}
+              <button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+            </div>
+
+            <!-- Top -->
+            <div class="top-bar stacked-for-medium stacked-for-large" id="mc-menu">
+              <div class="utility-nav">
+                <div class="row">
+                  <div class="container">
+                    <div class="newsletter">
+                      <label class="tiny-label" for="">Newsletter</label>
+                      <input type="email" placeholder="Your email" class="tiny-label">
+                      <a href="" class="button teenie-weenie">Sign up</a>
+                    </div>
+                    <div class="social">
+                      <a href="" class="icon">
+                        {{ fetch('images/heart.svg') }}
+                      </a>
+                      <a href="" class="icon">
+                        {{ fetch('images/twitter.svg') }}
+                      </a>
+                      <a href="" class="icon">
+                        {{ fetch('images/facebook.svg') }}
+                      </a>
+                      <a href="" class="icon">
+                        {{ fetch('images/instagram.svg') }}
+                      </a>
+                      <a href="" class="icon">
+                        {{ fetch('images/search.svg') }}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-nav">
+                <div class="row">
+                  <div class="top-bar-left">
+                    <div class="logo-container">
+                      <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+                    </div>
+                  </div>
+                  <div class="top-bar-right">
+                    <ul class="vertical medium-horizontal menu simple">
+                      <li><a href="#" class="medium-label">About</a></li>
+                      <li><a href="#" class="medium-label">Events</a></li>
+                      <li><a href="#" class="medium-label">Workshops</a></li>
+                      <li><a href="#" class="medium-label">Apply</a></li>
+                      <li><a href="#" class="medium-label">Volunteer</a></li>
+                      <li><a href="#" class="medium-label">Gallery</a></li>
+                      <li><a href="#" class="medium-label">Contact</a></li>
+                    </ul>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- HEADER - ON SCROLL -->
+          <h2 class="sg row no-line">Header - on scroll</h3>
+          <header class="on-scroll">
+            <!-- Title Bar -->
+            <div class="title-bar" data-responsive-toggle="mc-menu-no-scroll" data-hide-for="medium">
+              <div class="title-bar-title">
+                <img src="http://dummyimage.com/238x25/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+              </div>
+              <button class="menu-icon" type="button" data-toggle="mc-menu-no-scroll"></button>
+            </div>
+
+            <!-- Top -->
+            <div class="top-bar stacked-for-medium stacked-for-large" id="mc-menu-no-scroll">
+              <div class="main-nav">
+                <div class="row">
+                  <div class="top-bar-left">
+                    <div class="logo-container">
+                      <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+                    </div>
+                  </div>
+                  <div class="top-bar-right">
+                    <ul class="vertical medium-horizontal menu simple">
+                      <li><a href="#" class="medium-label">About</a></li>
+                      <li><a href="#" class="medium-label">Events</a></li>
+                      <li><a href="#" class="medium-label">Workshops</a></li>
+                      <li><a href="#" class="medium-label">Apply</a></li>
+                      <li><a href="#" class="medium-label">Volunteer</a></li>
+                      <li><a href="#" class="medium-label">Gallery</a></li>
+                      <li><a href="#" class="medium-label">Contact</a></li>
+                    </ul>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </section>
+
+        <section class="row content-blocks">
+          <h2 class="sg">Content Blocks</h2>
+          <div class="row blocks medium-up-2 large-up-4">
+            <div class="half-image-block column column-block">
+              <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+              <img src="http://dummyimage.com/15x15/4d494d/686a82.gif&text=I" alt="I">
+              <span class="small-label">News + Events</span>
+              <h2 class="block-title">Love | Music Schedule Feb 3-5</h2>
+              <p>Quisque laoreet enim sit amet feugiat fringilla. Quisque odio urna, dictum vitae neque quis, volutpat.</p>
+            </div>
+            <div class="half-image-block column column-block">
+              <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+              <img src="http://dummyimage.com/15x15/4d494d/686a82.gif&text=I" alt="I">
+              <span class="small-label">News + Events</span>
+              <h2 class="block-title">Story about a past market</h2>
+              <p>Donec quis tempus quam, non aliquet diam. Pellentesque efficitur laoreet neque, sed rutrum arcu vehicula sit.</p>
+            </div>
+            <div class="two-image-block column column-block">
+              <img src="http://dummyimage.com/800x650/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+              <img src="http://dummyimage.com/800x650/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+            </div>
+            <div class="full-image-block column column-block">
+              <img src="http://dummyimage.com/800x1500/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+            </div>
+          </div>
+        </section>
+
+        <section class="row forms">
+          <h2 class="sg no-line">Forms</h2>
+          <div class="form row">
+            <h3 class="section-title">Application</h3>
+            <div class="medium-6 columns">
+              <label>Company name</label>
+              <input type="text" placeholder="Company name">
+            </div>
+            <div class="medium-6 columns">
+              <label>Contact name</label>
+              <input type="text" placeholder="Please allow yourself to introduce..... yourself">
+            </div>
+            <div class="medium-6 columns">
+              <label>Phone number</label>
+              <input type="tel" placeholder="eg. 403-123-4567">
+            </div>
+            <div class="medium-6 columns">
+              <label>Email</label>
+              <input type="email" placeholder="eg. info@marketcollective.com">
+            </div>
+            <div class="medium-6 columns">
+              <label>Website</label>
+              <input type="url" placeholder="eg. www.marketcollective.com">
+            </div>
+            <div class="medium-6 columns">
+              <label>Address</label>
+              <input type="text" placeholder="eg. 123 Centre Street NW, Calgary, AB">
+            </div>
+            <div class="medium-4 columns">
+              <label>Twitter handle</label>
+              <input type="text" placeholder="eg. @marketcollective">
+            </div>
+            <div class="medium-4 columns">
+              <label>Instagram handle</label>
+              <input type="text" placeholder="eg. @marketcollective">
+            </div>
+            <div class="medium-4 columns">
+              <label>Facebook URL</label>
+              <input type="text" placeholder="eg. facebook.com/marketcollective">
+            </div>
+            <div class="small-12 columns">
+    <!--           <label>Table or booth size you wish to apply for?
+                <select>
+                  <option value="1">Table</option>
+                  <option value="2">10 x 6 booth</option>
+                  <option value="3">10 x 10 booth</option>
+                </select>
+              </label> -->
+              <fieldset class="radio">
+                <legend>Table or booth size you wish to apply for?</legend>
+                <label for="1"><input type="radio" value="1" id="1" name="quality"><span>Table</span></label>
+                <label for="2"><input type="radio" value="2" id="2" name="quality"><span>10 x 6 booth</span></label>
+                <label for="3"><input type="radio" value="3" id="3" name="quality"><span>10 x 10 booth</span></label>
+
+    <!--             <input type="radio" value="2"><label for="">10 x 6 booth</label></input>
+                <input type="radio" value="3"><label for="">10 x 10 booth</label></input>
+                <label for="accessible">
+                  <input type="radio" value="accessible" name="quality" id="accessible"> <span>accessible</span>
+                </label> -->
+              </fieldset>
+            </div>
+          </div>
+        </section>
+
+        <section class="row colours">
+          <h2 class="sg">Colours</h2>
+          <ul class="row small-up-2 medium-up-4 large-up-8 swatches">
+            <li class="column column-block" data-colour="dark-blue">
+              <div class="swatch"></div>
+              <p class="sg name">dark-blue</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="grey">
+              <div class="swatch"></div>
+              <p class="sg name">grey</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="pink">
+              <div class="swatch"></div>
+              <p class="sg name">pink</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="light-pink">
+              <div class="swatch"></div>
+              <p class="sg name">light-pink</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="purple">
+              <div class="swatch"></div>
+              <p class="sg name">purple</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="yellow">
+              <div class="swatch"></div>
+              <p class="sg name">yellow</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="aqua">
+              <div class="swatch"></div>
+              <p class="sg name">aqua</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="light-aqua">
+              <div class="swatch"></div>
+              <p class="sg name">light-aqua</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="lavender">
+              <div class="swatch"></div>
+              <p class="sg name">lavender</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="light-lavender">
+              <div class="swatch"></div>
+              <p class="sg name">light-lavender</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+            <li class="column column-block" data-colour="orange">
+              <div class="swatch"></div>
+              <p class="sg name">orange</p>
+              <p class="sg hex"></p>
+              <p class="sg tag"></p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="row icons">
+          <h2 class="sg">Icons</h2>
+          <ul class="menu expanded">
+            {# <li class="icon news">{% include 'icons/news' %}</li> #}
+            {# <li class="icon news">{{ fetch('images/newsEvents.svg') }}</li> #}
+            <li class="icon news">
+              {{ fetch('images/news.svg') }}
+              <p>News</p>
+            </li>
+            {# <li class="icon news"><?php echo file_get_contents("images/news.svg"); ?></li> #}
+            <li class="icon music">
+              {{ fetch('images/music.svg') }}
+              <p>Music</p>
+            </li>
+            <li class="icon food">
+              {{ fetch('images/food.svg') }}
+              <p>Food</p>
+            </li>
+            <li class="icon artists">
+              {{ fetch('images/artists.svg') }}
+              <p>Artists</p>
+            </li>
+            <li class="icon events">
+              {{ fetch('images/events.svg') }}
+              <p>Events</p>
+            </li>
+            <li class="icon volunteers">
+              {{ fetch('images/volunteers.svg') }}
+              <p>Volunteers</p>
+            </li>
+            <li class="icon photobooth">
+              {{ fetch('images/photobooth.svg') }}
+              <p>Photobooth</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="row buttons">
+          <h2 class="sg">Buttons</h2>
+          <a href="" class="button teenie-weenie">Sign-up</a>
+          <!-- <a href="" class="button small">Sign-up</a> -->
+          <a href="" class="button medium">Sign-up</a>
+          
+        </section>
+
+        <section class="row typography">
+          <h2 class="sg">Typography</h2>
+          <div class="body-container">
+            <h1 class="section-title">Section Title</h1>
+            <h2 class="article-title">Article Title</h2>
+            <h3 class="block-title">Block Title</h3>
+            <p class="tag">Tags, colour to be determined based on cateory/icon <a href="#">Tag type on hover</a></p>
+            <p>
+              Body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sollicitudin sem, a <a href="#">scelerisque</a> mi consectetur et. Vivamus ac arcu ut <a href="#">erat</a> egestas sagittis ut et ex. Phasellus porta sem
+            </p>
+            <ul class="labels">
+              <li class="tiny-label">Tiny Label</li>
+              <li class="small-label">Small Label</li>
+              <li class="medium-label">Medium Label</li>
+              <li class="large-label">Large Label</li>
+              <li class="xlarge-label">X-Large Label</li>
+            </ul>
+          </div>
+          <p class="intro-text">
+            Intro text style type. Always centered.
+          </p>
+        </section>
       </div>
-      <p class="intro-text">
-        Intro text style type. Always centered.
-      </p>
-    </section>
-
+    </div>
   </body>
 </html>
