@@ -4067,78 +4067,82 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
 .style-guide section.headers header {
   border-top: solid 1px lightgrey; }
 
-/* line 67, scss/_style-guide.scss */
+/* line 65, scss/_style-guide.scss */
+.style-guide section.headers p {
+  text-align: center; }
+
+/* line 71, scss/_style-guide.scss */
 .style-guide section.colours ul.swatches {
   padding-left: 0; }
 
-/* line 70, scss/_style-guide.scss */
+/* line 74, scss/_style-guide.scss */
 .style-guide section.colours ul.swatches li {
   list-style: none;
   text-align: center; }
 
-/* line 74, scss/_style-guide.scss */
+/* line 78, scss/_style-guide.scss */
 .style-guide section.colours ul.swatches li .swatch {
   height: 100px;
   width: 100px;
   margin: 0 auto; }
 
-/* line 82, scss/_style-guide.scss */
+/* line 86, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="dark-blue"] .swatch {
   background-color: #2d2769; }
 
-/* line 83, scss/_style-guide.scss */
+/* line 87, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="grey"] .swatch {
   background-color: #b5b3b3; }
 
-/* line 84, scss/_style-guide.scss */
+/* line 88, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="pink"] .swatch {
   background-color: #ef707c; }
 
-/* line 85, scss/_style-guide.scss */
+/* line 89, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="light-pink"] .swatch {
   background-color: #FFBDB9; }
 
-/* line 86, scss/_style-guide.scss */
+/* line 90, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="purple"] .swatch {
   background-color: #913b99; }
 
-/* line 87, scss/_style-guide.scss */
+/* line 91, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="yellow"] .swatch {
   background-color: #fbda51; }
 
-/* line 88, scss/_style-guide.scss */
+/* line 92, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="aqua"] .swatch {
   background-color: #29b2c3; }
 
-/* line 89, scss/_style-guide.scss */
+/* line 93, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="light-aqua"] .swatch {
   background-color: #b9dbd3; }
 
-/* line 90, scss/_style-guide.scss */
+/* line 94, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="lavender"] .swatch {
   background-color: #c9a6ce; }
 
-/* line 91, scss/_style-guide.scss */
+/* line 95, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="light-lavender"] .swatch {
   background-color: #f0e9f4; }
 
-/* line 92, scss/_style-guide.scss */
+/* line 96, scss/_style-guide.scss */
 .style-guide section.colours li[data-colour="orange"] .swatch {
   background-color: #f49732; }
 
-/* line 96, scss/_style-guide.scss */
+/* line 100, scss/_style-guide.scss */
 .style-guide section.icons ul {
   padding-left: 0; }
 
-/* line 98, scss/_style-guide.scss */
+/* line 102, scss/_style-guide.scss */
 .style-guide section.icons ul li.icon {
   text-align: center; }
 
-/* line 105, scss/_style-guide.scss */
+/* line 109, scss/_style-guide.scss */
 .style-guide section.typography .body-container {
   max-width: 520px; }
 
-/* line 108, scss/_style-guide.scss */
+/* line 112, scss/_style-guide.scss */
 .style-guide section.typography .body-container ul.labels {
   list-style-type: none;
   padding-left: 0; }
