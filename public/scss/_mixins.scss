@@ -1,0 +1,25 @@
+@mixin aspect-ratio($width, $height, $h-gutter) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    // padding-top: ($height / $width) * 100%;
+    $padding-top: ($height / $width) * 100%;
+    // padding-top: $padding-top;
+    // padding-top: calc(#{$padding-top} + 25%);
+    // padding-top: calc(#{$padding-top} + 20px);
+    padding-top: calc(#{$padding-top} + #{$h-gutter});
+    // padding-top: -webkit-calc(#{$padding-top} + 25%);
+    // padding-top: -webkit-calc(#{$padding-top} + 20px);
+    padding-top: -webkit-calc(#{$padding-top} + #{$h-gutter});
+  }
+  > .ratio-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden; // I'm not convinced yet this is the way to go
+  }
+}

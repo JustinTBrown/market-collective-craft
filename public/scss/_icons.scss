@@ -3,7 +3,7 @@
   max-width: 3rem
 }
 svg {
-  path#heart {
+  path#heart-outline {
     stroke: $aqua;
   }
   path#twitter,
@@ -14,7 +14,7 @@ svg {
   }
 
   &:hover {
-    path#heart {
+    path#heart-outline {
       stroke: $pink;
       fill: $pink;
     }

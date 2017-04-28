@@ -84,7 +84,7 @@
                     </div>
                     <div class="social">
                       <a href="" class="icon">
-                        {{ fetch('images/heart.svg') }}
+                        {{ fetch('images/heart-outline.svg') }}
                       </a>
                       <a href="" class="icon">
                         {{ fetch('images/twitter.svg') }}
@@ -160,32 +160,70 @@
               </div>
             </div>
           </header>
-          <p class="small-label show-for-small-only">Menu toggle disabled on this one</p>
+          <p class="small-label hide-for-xlarge">Menu toggle disabled on this one</p>
         </section>
 
         <section class="row content-blocks">
           <h2 class="sg">Content Blocks</h2>
           <div class="row blocks medium-up-2 large-up-4">
             <div class="half-image-block column column-block">
-              <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-              <img src="http://dummyimage.com/15x15/4d494d/686a82.gif&text=I" alt="I">
-              <span class="small-label">News + Events</span>
-              <h2 class="block-title">Love | Music Schedule Feb 3-5</h2>
-              <p>Quisque laoreet enim sit amet feugiat fringilla. Quisque odio urna, dictum vitae neque quis, volutpat.</p>
+              <div class="ratio-container">
+                <div class="ratio-box">
+                  <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+                </div>
+              </div>
+              <div class="ratio-container-text">
+                <div class="ratio-box">
+                  <div class="icon">
+                    {{ fetch('images/news.svg') }}
+                  </div>
+                  <span class="label small-label">News + Events</span>
+                  <h2 class="article-title">Love | Music Schedule Feb 3-5</h2>
+                  <p>Quisque laoreet enim sit amet feugiat fringilla. Quisque odio urna, dictum vitae neque quis, volutpat.</p>
+                </div>
+              </div>
             </div>
             <div class="half-image-block column column-block">
-              <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-              <img src="http://dummyimage.com/15x15/4d494d/686a82.gif&text=I" alt="I">
-              <span class="small-label">News + Events</span>
-              <h2 class="block-title">Story about a past market</h2>
-              <p>Donec quis tempus quam, non aliquet diam. Pellentesque efficitur laoreet neque, sed rutrum arcu vehicula sit.</p>
+              <div class="ratio-container">
+                <div class="ratio-box">
+                  <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+                </div>
+              </div>
+              <div class="ratio-container-text">
+                <div class="ratio-box">
+                  <div class="icon">
+                    {{ fetch('images/news.svg') }}
+                  </div>
+                  <span class="label small-label">News + Events</span>
+                  <h2 class="article-title">Story about a past market</h2>
+                  <p>Donec quis tempus quam, non aliquet diam. Pellentesque efficitur laoreet neque, sed rutrum arcu vehicula sit.</p>
+                </div>
+              </div>
             </div>
             <div class="two-image-block column column-block">
-              <img src="http://dummyimage.com/800x650/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-              <img src="http://dummyimage.com/800x650/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+              <div class="ratio-container">
+                <div class="ratio-box">
+                  <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+                </div>
+              </div>
+              <div class="ratio-container">
+                <div class="ratio-box">
+                  <img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+                </div>
+              </div>
             </div>
             <div class="full-image-block column column-block">
-              <img src="http://dummyimage.com/800x1500/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+{#               <div class="ratio-container">
+                <div class="ratio-box"></div>
+              </div>
+              <div class="ratio-container">
+                <div class="ratio-box"></div>
+              </div> #}
+              <div class="ratio-container">
+                <div class="ratio-box">
+                  <img src="http://dummyimage.com/800x1300/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -376,7 +414,7 @@
           <div class="body-container">
             <h1 class="section-title">Section Title</h1>
             <h2 class="article-title">Article Title</h2>
-            <h3 class="block-title">Block Title</h3>
+            <h3 class="small-article-title">Block Title</h3>
             <p class="tag">Tags, colour to be determined based on cateory/icon <a href="#">Tag type on hover</a></p>
             <p>
               Body copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sollicitudin sem, a <a href="#">scelerisque</a> mi consectetur et. Vivamus ac arcu ut <a href="#">erat</a> egestas sagittis ut et ex. Phasellus porta sem
