@@ -33,7 +33,8 @@
 .content-block--half-image,
 .content-block--two-image,
 .content-block--full-image,
-.content-block--spotlight {
+.content-block--spotlight,
+.content-block--gallery {
   @extend .content-block;
 }
 
@@ -79,6 +80,30 @@
   }
   p.large-label {
     margin-bottom: 0.5em;
+  }
+}
+.content-block--gallery {
+  a {
+    position: relative;
+    display: block;
+
+    .text-container {
+      @include vertical-center();
+      text-align: center;
+      width: 100%;
+
+      .icon {
+        display: inline-block;
+      }
+      span {
+        display: block;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+    }
+    
   }
 }
 
