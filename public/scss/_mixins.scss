@@ -1,3 +1,4 @@
+// https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
 @mixin aspect-ratio($width, $height, $h-gutter) {
   position: relative;
   &:before {

@@ -1,0 +1,26 @@
+ul.categories {
+  padding-left: 0;
+  display: inline-block;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+.category-tag {
+  @extend .small-label;
+  background-color: $pink;
+  color: $white; 
+  display: inline-block;
+  padding: 0.75em 1em;
+
+  &:hover {
+    background-color: $light-pink;
+    color: $white;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $aqua;
+    color: $white;
+  }
+}

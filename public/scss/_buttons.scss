@@ -26,3 +26,43 @@
 
   }
 }
+
+
+// .chevron::after {
+//   border-style: solid;
+//   border-width: 0.25em 0.25em 0 0;
+//   content: '';
+//   display: inline-block;
+//   height: 0.45em;
+//   left: 0.15em;
+//   position: relative;
+//   top: 0.15em;
+//   transform: rotate(-45deg);
+//   vertical-align: top;
+//   width: 0.45em;
+// }
+
+// .chevron.right:after {
+//   left: 0;
+//   transform: rotate(45deg);
+// }
+
+.cta {
+  font-family: $heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::after { // https://codepen.io/jonneal/pen/kptBs
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.70em;
+    left: 0.35em;
+    position: relative;
+    top: 0.35em;
+    vertical-align: top;
+    width: 0.70em;
+    transform: rotate(45deg);
+  }
+}
