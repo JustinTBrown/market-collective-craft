@@ -28,31 +28,73 @@ svg {
 }
 
 
-
-g#news {
-  fill: $aqua;
+.news {
+  g#news {
+    fill: $aqua;
+  }
+  &:hover {
+    g#news {
+      fill: lighten($aqua, 20%);
+    }
+  }
 }
-
-g#music {
-  fill: $pink;
+.music {
+  g#music {
+    fill: $pink;
+  }
+  &:hover {
+    g#music {
+      fill: lighten($pink, 20%);
+    }
+  }
 }
-
-g#food {
-  fill: $orange;
+.food {
+  g#food {
+    fill: $orange;
+  }
+  &:hover {
+    g#food {
+      fill: lighten($orange, 20%);
+    }
+  }
 }
-
-g#artists {
-  fill: $purple;
+.artists {
+  g#artists {
+    fill: $purple;
+  }
+  &:hover {
+    g#artists {
+      fill: lighten($purple, 20%);
+    }
+  }
 }
-
-g#events {
-  fill: $dark-blue;
+.events {
+  g#events {
+    fill: $dark-blue;
+  }
+  &:hover {
+    g#events {
+      fill: lighten($dark-blue, 30%);
+    }
+  }
 }
-
-g#volunteers {
-  fill: $aqua;
+.volunteers {
+  g#volunteers {
+    fill: $aqua;
+  }
+  &:hover {
+    g#volunteers {
+      fill: lighten($aqua, 20%);
+    }
+  }
 }
-
-g#photobooth {
-  fill: $yellow;
+.photobooth {
+  g#photobooth {
+    fill: $yellow;
+  }
+  &:hover {
+    g#photobooth {
+      fill: lighten($yellow, 10%);
+    }
+  }
 }

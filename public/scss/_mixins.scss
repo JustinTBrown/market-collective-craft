@@ -24,3 +24,21 @@
     overflow: hidden; // I'm not convinced yet this is the way to go
   }
 }
+
+// @mixin image-overlay {
+//   // Add 'wrapper' class around image
+//   .wrapper {
+//     background-color: rgba(0,0,0,0.2);
+//     display: none;
+//     height: 100%;
+//     top: 0;
+//     position: absolute;
+//     width: 100%;
+//     transition: all 0.2s;
+//   }
+//   &:hover {
+//     .wrapper {
+//       display: block;
+//     }
+//   }
+// }

@@ -48,6 +48,7 @@
 // }
 
 .cta {
+  color: $pink;
   font-family: $heading-font;
   font-weight: 700;
   text-transform: uppercase;
@@ -60,7 +61,7 @@
     height: 0.70em;
     left: 0.35em;
     position: relative;
-    top: 0.35em;
+    top: 0.40em;
     vertical-align: top;
     width: 0.70em;
     transform: rotate(45deg);

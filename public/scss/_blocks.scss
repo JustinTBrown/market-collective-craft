@@ -1,30 +1,46 @@
 // BASE STYLES
 .content-block {
-  .icon {
-    display: inline-block;
-    svg {
-      height: 0.7rem;
-      width: 1.7rem;
+  a {
+    color: $dark-blue;
+
+    .icon {
+      display: inline-block;
+      svg {
+        height: 0.7rem;
+        width: 1.7rem;
+      }
     }
-  }
 
-  .article-title {
-    margin-top: 0.2em;
-  }
+    .article-title {
+      margin-top: 0.2em;
+    }
 
-  .label {
-    color: $aqua;
-    text-transform: uppercase;
-  }
+    .label {
+      color: $aqua;
+      text-transform: uppercase;
+    }
 
-  &.column-block {
-    border-right: solid 1px $aqua;
-    &:last-of-type {
-      border: none;
+    &.column-block {
+      border-right: solid 1px $aqua;
+      &:last-of-type {
+        border: none;
+      }
     }
 
     &:hover {
       color: $pink;
+
+      .image-overlay {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+      }
+
+      .icon {
+
+      }
     }
   }
 }
@@ -34,7 +50,8 @@
 .content-block--two-image,
 .content-block--full-image,
 .content-block--spotlight,
-.content-block--gallery {
+.content-block--gallery,
+.content-block--thumb {
   @extend .content-block;
 }
 
@@ -43,13 +60,6 @@
   .ratio-container,
   .ratio-container-text {
     @include aspect-ratio(4, 3, 0%);
-
-    &:last-of-type {
-      margin-top: 5%;
-      @include breakpoint(large) {
-        margin-top: 10%;
-      }
-    }
   }
   .ratio-container-text {
     @include aspect-ratio(4, 1, 0%);
@@ -58,6 +68,36 @@
     }
     @include breakpoint( large ) {
       @include aspect-ratio(4, 3, 0%);
+    }
+    &:last-of-type {
+      margin-top: 5%;
+      @include breakpoint(large) {
+        margin-top: 10%;
+      }
+    }
+  }
+}
+.content-block--half-image {
+  // a {
+  //   display: block;
+    
+  //   &:last-of-type {
+  //     margin-top: 5%;
+  //     @include breakpoint(large) {
+  //       margin-top: 10%;
+  //     }
+  //   }
+  // }
+}
+.content-block--two-image {
+  a {
+    display: block;
+    
+    &:last-of-type {
+      margin-top: 5%;
+      @include breakpoint(large) {
+        margin-top: 10%;
+      }
     }
   }
 }
@@ -74,6 +114,21 @@
 .content-block--spotlight {
   margin-bottom: 3rem;
 
+  .icon {
+    display: inline-block;
+    svg {
+      height: 0.7rem;
+      width: 1.7rem;
+    }
+  }
+  .article-title {
+    margin-top: 0.2em;
+  }
+
+  .label {
+    color: $aqua;
+    text-transform: uppercase;
+  }
   p, ul {
     margin-top: 0;
     margin-bottom: 2em;
@@ -81,35 +136,69 @@
   p.large-label {
     margin-bottom: 0.5em;
   }
+  a.cta {
+    color: $pink;
+    &:hover {
+      color: $light-pink;
+    }
+  }
+
 }
-.content-block--gallery {
+.content-block--gallery,
+.content-block--full-image {
   a {
     position: relative;
     display: block;
+
+    .text-overlay-wrapper {
+      background-color: rgba(0,0,0,0.2);
+      display: none;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      transition: all 0.2s;
+    }
+    &:hover {
+      .text-overlay-wrapper {
+        display: block;
+      }
+    }
 
     .text-container {
       @include vertical-center();
       text-align: center;
       width: 100%;
+      padding: 1rem;
 
       .icon {
         display: inline-block;
+        margin-bottom: 0.3rem;
+
+        g#photobooth {
+            fill: $white;
+        }
       }
       span {
+        color: $white;
         display: block;
         text-align: center;
       }
       h2 {
+        color: $white;
         text-align: center;
+        margin-top: 0;
       }
-    }
-    
+    }    
   }
 }
 
 // OTHER BLOCKS
-.thumb-block {
+.content-block--thumb {
   a {
+    .image-wrapper {
+      position: relative;
+    }
     p {
       color: $dark-blue;
     }

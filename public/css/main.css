@@ -3603,32 +3603,60 @@ svg:hover g#search {
   fill: #ef707c; }
 
 /* line 32, scss/_icons.scss */
-g#news {
+.news g#news {
   fill: #29b2c3; }
 
 /* line 36, scss/_icons.scss */
-g#music {
+.news:hover g#news {
+  fill: #71d5e1; }
+
+/* line 42, scss/_icons.scss */
+.music g#music {
   fill: #ef707c; }
 
-/* line 40, scss/_icons.scss */
-g#food {
-  fill: #f49732; }
-
-/* line 44, scss/_icons.scss */
-g#artists {
-  fill: #913b99; }
-
-/* line 48, scss/_icons.scss */
-g#events {
-  fill: #2d2769; }
+/* line 46, scss/_icons.scss */
+.music:hover g#music {
+  fill: #f9ccd0; }
 
 /* line 52, scss/_icons.scss */
-g#volunteers {
-  fill: #29b2c3; }
+.food g#food {
+  fill: #f49732; }
 
 /* line 56, scss/_icons.scss */
-g#photobooth {
+.food:hover g#food {
+  fill: #f9c893; }
+
+/* line 62, scss/_icons.scss */
+.artists g#artists {
+  fill: #913b99; }
+
+/* line 66, scss/_icons.scss */
+.artists:hover g#artists {
+  fill: #c172c8; }
+
+/* line 72, scss/_icons.scss */
+.events g#events {
+  fill: #2d2769; }
+
+/* line 76, scss/_icons.scss */
+.events:hover g#events {
+  fill: #6d64c5; }
+
+/* line 82, scss/_icons.scss */
+.volunteers g#volunteers {
+  fill: #29b2c3; }
+
+/* line 86, scss/_icons.scss */
+.volunteers:hover g#volunteers {
+  fill: #71d5e1; }
+
+/* line 92, scss/_icons.scss */
+.photobooth g#photobooth {
   fill: #fbda51; }
+
+/* line 96, scss/_icons.scss */
+.photobooth:hover g#photobooth {
+  fill: #fce583; }
 
 /* line 1, scss/_buttons.scss */
 .button {
@@ -3648,11 +3676,12 @@ g#photobooth {
 
 /* line 50, scss/_buttons.scss */
 .cta {
+  color: #ef707c;
   font-family: "Playfair Display", serif;
   font-weight: 700;
   text-transform: uppercase; }
 
-/* line 55, scss/_buttons.scss */
+/* line 56, scss/_buttons.scss */
 .cta::after {
   border-style: solid;
   border-width: 0.25em 0.25em 0 0;
@@ -3661,7 +3690,7 @@ g#photobooth {
   height: 0.70em;
   left: 0.35em;
   position: relative;
-  top: 0.35em;
+  top: 0.40em;
   vertical-align: top;
   width: 0.70em;
   transform: rotate(45deg); }
@@ -4050,64 +4079,93 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
     margin: 0.7rem 0rem 0.7rem 2rem; } }
 
 /* line 3, scss/_blocks.scss */
-.content-block .icon, .content-block--half-image .icon,
-.content-block--two-image .icon,
-.content-block--full-image .icon,
-.content-block--spotlight .icon,
-.content-block--gallery .icon {
+.content-block a, .content-block--half-image a,
+.content-block--two-image a,
+.content-block--full-image a,
+.content-block--spotlight a,
+.content-block--gallery a,
+.content-block--thumb a {
+  color: #2d2769; }
+
+/* line 6, scss/_blocks.scss */
+.content-block a .icon, .content-block--half-image a .icon,
+.content-block--two-image a .icon,
+.content-block--full-image a .icon,
+.content-block--spotlight a .icon,
+.content-block--gallery a .icon,
+.content-block--thumb a .icon {
   display: inline-block; }
 
-/* line 5, scss/_blocks.scss */
-.content-block .icon svg, .content-block--half-image .icon svg,
-.content-block--two-image .icon svg,
-.content-block--full-image .icon svg,
-.content-block--spotlight .icon svg,
-.content-block--gallery .icon svg {
+/* line 8, scss/_blocks.scss */
+.content-block a .icon svg, .content-block--half-image a .icon svg,
+.content-block--two-image a .icon svg,
+.content-block--full-image a .icon svg,
+.content-block--spotlight a .icon svg,
+.content-block--gallery a .icon svg,
+.content-block--thumb a .icon svg {
   height: 0.7rem;
   width: 1.7rem; }
 
-/* line 11, scss/_blocks.scss */
-.content-block .article-title, .content-block--half-image .article-title,
-.content-block--two-image .article-title,
-.content-block--full-image .article-title,
-.content-block--spotlight .article-title,
-.content-block--gallery .article-title {
+/* line 14, scss/_blocks.scss */
+.content-block a .article-title, .content-block--half-image a .article-title,
+.content-block--two-image a .article-title,
+.content-block--full-image a .article-title,
+.content-block--spotlight a .article-title,
+.content-block--gallery a .article-title,
+.content-block--thumb a .article-title {
   margin-top: 0.2em; }
 
-/* line 15, scss/_blocks.scss */
-.content-block .label, .content-block--half-image .label,
-.content-block--two-image .label,
-.content-block--full-image .label,
-.content-block--spotlight .label,
-.content-block--gallery .label {
+/* line 18, scss/_blocks.scss */
+.content-block a .label, .content-block--half-image a .label,
+.content-block--two-image a .label,
+.content-block--full-image a .label,
+.content-block--spotlight a .label,
+.content-block--gallery a .label,
+.content-block--thumb a .label {
   color: #29b2c3;
   text-transform: uppercase; }
 
-/* line 20, scss/_blocks.scss */
-.content-block.column-block, .column-block.content-block--half-image,
-.column-block.content-block--two-image,
-.column-block.content-block--full-image,
-.column-block.content-block--spotlight,
-.column-block.content-block--gallery {
+/* line 23, scss/_blocks.scss */
+.content-block a.column-block, .content-block--half-image a.column-block,
+.content-block--two-image a.column-block,
+.content-block--full-image a.column-block,
+.content-block--spotlight a.column-block,
+.content-block--gallery a.column-block,
+.content-block--thumb a.column-block {
   border-right: solid 1px #29b2c3; }
 
-/* line 22, scss/_blocks.scss */
-.content-block.column-block:last-of-type, .column-block.content-block--half-image:last-of-type,
-.column-block.content-block--two-image:last-of-type,
-.column-block.content-block--full-image:last-of-type,
-.column-block.content-block--spotlight:last-of-type,
-.column-block.content-block--gallery:last-of-type {
+/* line 25, scss/_blocks.scss */
+.content-block a.column-block:last-of-type, .content-block--half-image a.column-block:last-of-type,
+.content-block--two-image a.column-block:last-of-type,
+.content-block--full-image a.column-block:last-of-type,
+.content-block--spotlight a.column-block:last-of-type,
+.content-block--gallery a.column-block:last-of-type,
+.content-block--thumb a.column-block:last-of-type {
   border: none; }
 
-/* line 26, scss/_blocks.scss */
-.content-block.column-block:hover, .column-block.content-block--half-image:hover,
-.column-block.content-block--two-image:hover,
-.column-block.content-block--full-image:hover,
-.column-block.content-block--spotlight:hover,
-.column-block.content-block--gallery:hover {
+/* line 30, scss/_blocks.scss */
+.content-block a:hover, .content-block--half-image a:hover,
+.content-block--two-image a:hover,
+.content-block--full-image a:hover,
+.content-block--spotlight a:hover,
+.content-block--gallery a:hover,
+.content-block--thumb a:hover {
   color: #ef707c; }
 
-/* line 43, scss/_blocks.scss */
+/* line 33, scss/_blocks.scss */
+.content-block a:hover .image-overlay, .content-block--half-image a:hover .image-overlay,
+.content-block--two-image a:hover .image-overlay,
+.content-block--full-image a:hover .image-overlay,
+.content-block--spotlight a:hover .image-overlay,
+.content-block--gallery a:hover .image-overlay,
+.content-block--thumb a:hover .image-overlay {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute; }
+
+/* line 60, scss/_blocks.scss */
 .content-block--half-image .ratio-container,
 .content-block--half-image .ratio-container-text,
 .content-block--two-image .ratio-container,
@@ -4137,22 +4195,7 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
   bottom: 0;
   overflow: hidden; }
 
-/* line 47, scss/_blocks.scss */
-.content-block--half-image .ratio-container:last-of-type,
-.content-block--half-image .ratio-container-text:last-of-type,
-.content-block--two-image .ratio-container:last-of-type,
-.content-block--two-image .ratio-container-text:last-of-type {
-  margin-top: 5%; }
-
-@media print, screen and (min-width: 64em) {
-  /* line 47, scss/_blocks.scss */
-  .content-block--half-image .ratio-container:last-of-type,
-  .content-block--half-image .ratio-container-text:last-of-type,
-  .content-block--two-image .ratio-container:last-of-type,
-  .content-block--two-image .ratio-container-text:last-of-type {
-    margin-top: 10%; } }
-
-/* line 54, scss/_blocks.scss */
+/* line 64, scss/_blocks.scss */
 .content-block--half-image .ratio-container-text,
 .content-block--two-image .ratio-container-text {
   position: relative; }
@@ -4177,7 +4220,7 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
   overflow: hidden; }
 
 @media print, screen and (min-width: 40em) {
-  /* line 54, scss/_blocks.scss */
+  /* line 64, scss/_blocks.scss */
   .content-block--half-image .ratio-container-text,
   .content-block--two-image .ratio-container-text {
     position: relative; }
@@ -4200,7 +4243,7 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
     overflow: hidden; } }
 
 @media print, screen and (min-width: 64em) {
-  /* line 54, scss/_blocks.scss */
+  /* line 64, scss/_blocks.scss */
   .content-block--half-image .ratio-container-text,
   .content-block--two-image .ratio-container-text {
     position: relative; }
@@ -4222,7 +4265,31 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
     bottom: 0;
     overflow: hidden; } }
 
-/* line 66, scss/_blocks.scss */
+/* line 72, scss/_blocks.scss */
+.content-block--half-image .ratio-container-text:last-of-type,
+.content-block--two-image .ratio-container-text:last-of-type {
+  margin-top: 5%; }
+
+@media print, screen and (min-width: 64em) {
+  /* line 72, scss/_blocks.scss */
+  .content-block--half-image .ratio-container-text:last-of-type,
+  .content-block--two-image .ratio-container-text:last-of-type {
+    margin-top: 10%; } }
+
+/* line 93, scss/_blocks.scss */
+.content-block--two-image a {
+  display: block; }
+
+/* line 96, scss/_blocks.scss */
+.content-block--two-image a:last-of-type {
+  margin-top: 5%; }
+
+@media print, screen and (min-width: 64em) {
+  /* line 96, scss/_blocks.scss */
+  .content-block--two-image a:last-of-type {
+    margin-top: 10%; } }
+
+/* line 106, scss/_blocks.scss */
 .content-block--full-image .ratio-container {
   position: relative; }
 
@@ -4244,7 +4311,7 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
   overflow: hidden; }
 
 @media print, screen and (min-width: 64em) {
-  /* line 66, scss/_blocks.scss */
+  /* line 106, scss/_blocks.scss */
   .content-block--full-image .ratio-container {
     position: relative; }
   /* line 4, scss/_mixins.scss */
@@ -4263,51 +4330,112 @@ header .top-bar .main-nav .row .top-bar-right ul.menu li a:hover:after {
     bottom: 0;
     overflow: hidden; } }
 
-/* line 74, scss/_blocks.scss */
+/* line 114, scss/_blocks.scss */
 .content-block--spotlight {
   margin-bottom: 3rem; }
 
-/* line 77, scss/_blocks.scss */
+/* line 117, scss/_blocks.scss */
+.content-block--spotlight .icon {
+  display: inline-block; }
+
+/* line 119, scss/_blocks.scss */
+.content-block--spotlight .icon svg {
+  height: 0.7rem;
+  width: 1.7rem; }
+
+/* line 124, scss/_blocks.scss */
+.content-block--spotlight .article-title {
+  margin-top: 0.2em; }
+
+/* line 128, scss/_blocks.scss */
+.content-block--spotlight .label {
+  color: #29b2c3;
+  text-transform: uppercase; }
+
+/* line 132, scss/_blocks.scss */
 .content-block--spotlight p, .content-block--spotlight ul {
   margin-top: 0;
   margin-bottom: 2em; }
 
-/* line 81, scss/_blocks.scss */
+/* line 136, scss/_blocks.scss */
 .content-block--spotlight p.large-label {
   margin-bottom: 0.5em; }
 
-/* line 86, scss/_blocks.scss */
-.content-block--gallery a {
+/* line 139, scss/_blocks.scss */
+.content-block--spotlight a.cta {
+  color: #ef707c; }
+
+/* line 141, scss/_blocks.scss */
+.content-block--spotlight a.cta:hover {
+  color: #FFBDB9; }
+
+/* line 149, scss/_blocks.scss */
+.content-block--gallery a,
+.content-block--full-image a {
   position: relative;
   display: block; }
 
-/* line 90, scss/_blocks.scss */
-.content-block--gallery a .text-container {
+/* line 153, scss/_blocks.scss */
+.content-block--gallery a .text-overlay-wrapper,
+.content-block--full-image a .text-overlay-wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  transition: all 0.2s; }
+
+/* line 163, scss/_blocks.scss */
+.content-block--gallery a:hover .text-overlay-wrapper,
+.content-block--full-image a:hover .text-overlay-wrapper {
+  display: block; }
+
+/* line 168, scss/_blocks.scss */
+.content-block--gallery a .text-container,
+.content-block--full-image a .text-container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding: 1rem; }
 
-/* line 95, scss/_blocks.scss */
-.content-block--gallery a .text-container .icon {
-  display: inline-block; }
+/* line 174, scss/_blocks.scss */
+.content-block--gallery a .text-container .icon,
+.content-block--full-image a .text-container .icon {
+  display: inline-block;
+  margin-bottom: 0.3rem; }
 
-/* line 98, scss/_blocks.scss */
-.content-block--gallery a .text-container span {
+/* line 178, scss/_blocks.scss */
+.content-block--gallery a .text-container .icon g#photobooth,
+.content-block--full-image a .text-container .icon g#photobooth {
+  fill: #fff; }
+
+/* line 182, scss/_blocks.scss */
+.content-block--gallery a .text-container span,
+.content-block--full-image a .text-container span {
+  color: #fff;
   display: block;
   text-align: center; }
 
-/* line 102, scss/_blocks.scss */
-.content-block--gallery a .text-container h2 {
-  text-align: center; }
+/* line 187, scss/_blocks.scss */
+.content-block--gallery a .text-container h2,
+.content-block--full-image a .text-container h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 0; }
 
-/* line 113, scss/_blocks.scss */
-.thumb-block a p {
+/* line 199, scss/_blocks.scss */
+.content-block--thumb a .image-wrapper {
+  position: relative; }
+
+/* line 202, scss/_blocks.scss */
+.content-block--thumb a p {
   color: #2d2769; }
 
-/* line 118, scss/_blocks.scss */
-.thumb-block a:hover p {
+/* line 207, scss/_blocks.scss */
+.content-block--thumb a:hover p {
   color: #ef707c; }
 
 /* line 1, scss/_style-guide.scss */
