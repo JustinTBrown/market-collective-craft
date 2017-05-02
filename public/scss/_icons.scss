@@ -27,74 +27,54 @@ svg {
   }
 }
 
-
-.news {
+.icon {
   g#news {
     fill: $aqua;
+  }
+  g#music {
+    fill: $pink;
+  }
+  g#food {
+    fill: $orange;
+  }
+  g#artists {
+    fill: $purple;
+  }
+  g#events {
+    fill: $dark-blue;
+  }
+  g#volunteers {
+    fill: $aqua;
+  }
+  g#photobooth {
+    fill: $yellow;
   }
   &:hover {
     g#news {
       fill: lighten($aqua, 20%);
     }
-  }
-}
-.music {
-  g#music {
-    fill: $pink;
-  }
-  &:hover {
     g#music {
       fill: lighten($pink, 20%);
     }
-  }
-}
-.food {
-  g#food {
-    fill: $orange;
-  }
-  &:hover {
     g#food {
       fill: lighten($orange, 20%);
     }
-  }
-}
-.artists {
-  g#artists {
-    fill: $purple;
-  }
-  &:hover {
     g#artists {
       fill: lighten($purple, 20%);
     }
-  }
-}
-.events {
-  g#events {
-    fill: $dark-blue;
-  }
-  &:hover {
     g#events {
       fill: lighten($dark-blue, 30%);
     }
-  }
-}
-.volunteers {
-  g#volunteers {
-    fill: $aqua;
-  }
-  &:hover {
     g#volunteers {
       fill: lighten($aqua, 20%);
     }
-  }
-}
-.photobooth {
-  g#photobooth {
-    fill: $yellow;
-  }
-  &:hover {
     g#photobooth {
       fill: lighten($yellow, 10%);
     }
   }
 }
+
+
+
+
+

@@ -29,6 +29,7 @@
 
     &:hover {
       color: $pink;
+      transition: all 0.2s ease;
 
       .image-overlay {
         display: block;
@@ -36,10 +37,7 @@
         width: 100%;
         background-color: rgba(0,0,0,0.3);
         position: absolute;
-      }
-
-      .icon {
-
+        transition: all 0.2s ease;
       }
     }
   }
@@ -77,18 +75,6 @@
     }
   }
 }
-.content-block--half-image {
-  // a {
-  //   display: block;
-    
-  //   &:last-of-type {
-  //     margin-top: 5%;
-  //     @include breakpoint(large) {
-  //       margin-top: 10%;
-  //     }
-  //   }
-  // }
-}
 .content-block--two-image {
   a {
     display: block;
@@ -107,7 +93,59 @@
     @include aspect-ratio(4, 6, 5%);
     @include breakpoint( large ) {
       @include aspect-ratio(4, 6, 10%);
+    }
+  }
+}
+.content-block--gallery,
+.content-block--full-image {
+  a {
+    position: relative;
+    display: block;
 
+    .text-overlay-wrapper {
+      background-color: rgba(0,0,0,0);
+      height: 100%;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      transition: all 0.2s ease;
+
+      .text-container {
+        visibility: hidden;
+        @include vertical-center();
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+
+        .icon {
+          display: inline-block;
+          margin-bottom: 0.3rem;
+
+          g {
+            fill: $white;
+          }
+        }
+        span {
+          color: $white;
+          display: block;
+          text-align: center;
+        }
+        h2 {
+          color: $white;
+          text-align: center;
+          margin-top: 0;
+        }
+      }    
+    }
+  }
+
+  &:hover {
+    .text-overlay-wrapper {
+      background-color: rgba(0,0,0,0.2);
+
+      .text-container {
+        visibility: visible;
+      }
     }
   }
 }
@@ -143,54 +181,6 @@
     }
   }
 
-}
-.content-block--gallery,
-.content-block--full-image {
-  a {
-    position: relative;
-    display: block;
-
-    .text-overlay-wrapper {
-      background-color: rgba(0,0,0,0.2);
-      display: none;
-      height: 100%;
-      top: 0;
-      position: absolute;
-      width: 100%;
-      transition: all 0.2s;
-    }
-    &:hover {
-      .text-overlay-wrapper {
-        display: block;
-      }
-    }
-
-    .text-container {
-      @include vertical-center();
-      text-align: center;
-      width: 100%;
-      padding: 1rem;
-
-      .icon {
-        display: inline-block;
-        margin-bottom: 0.3rem;
-
-        g#photobooth {
-            fill: $white;
-        }
-      }
-      span {
-        color: $white;
-        display: block;
-        text-align: center;
-      }
-      h2 {
-        color: $white;
-        text-align: center;
-        margin-top: 0;
-      }
-    }    
-  }
 }
 
 // OTHER BLOCKS
