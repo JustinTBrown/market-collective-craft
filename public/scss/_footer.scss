@@ -1,0 +1,26 @@
+footer {
+  background-color: $light-aqua;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  li {
+    font-size: 0.875rem;
+    a {
+      color: $dark-blue;
+
+
+    }
+    
+  }
+
+  .links {
+    li {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+    // display: inline-block;
+    // p, ul, li {
+    //   display: inline-block;
+    // }
+  }
+}

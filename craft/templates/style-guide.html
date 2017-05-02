@@ -52,7 +52,7 @@
         </div>
       </div>
       
-      {# OFF CANVAS CONTENT #}
+      {# ON CANVAS CONTENT #}
       <div class="off-canvas-content" data-off-canvas-content>  
         <h1 class="sg">Style Guide</h1>
         <p class="sg subtitle">Market Collective Website</p>
@@ -104,7 +104,7 @@
                 <div class="row">
                   <div class="top-bar-left">
                     <div class="logo-container">
-                      <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+                      {{ fetch('images/logo.svg') }}
                     </div>
                   </div>
                   <div class="top-bar-right">
@@ -140,7 +140,7 @@
                 <div class="row">
                   <div class="top-bar-left">
                     <div class="logo-container">
-                      <img src="http://dummyimage.com/380x40/2d2769/686a82.gif&text=market+collective" alt="market+collective" class="logo">
+                      {{ fetch('images/logo.svg') }}
                     </div>
                   </div>
                   <div class="top-bar-right">
@@ -566,7 +566,62 @@
             Intro text style type. Always centered.
           </p>
         </section>
-      </div>
-    </div>
+        <section class="footer">
+          <h2 class="sg row no-line">Footers</h2>
+          <footer>
+            <div class="row">
+              <div class="small-12 medium-6 large-5 columns">
+                <p class="medium-label">Address</p>
+                <ul class="basic">
+                  <li>1221 B Kensington Road NW</li>
+                  <li>Calgary, AB</li>
+                  <li>T2N 3P8</li>
+                </ul>
+              </div>
+              <div class="small-12 medium-5 large-6 columns">
+                <div class="row">
+                  <div class="small-12 large-3 columns links categories">
+                    <p class="medium-label">Categories</p>
+                    <ul class="basic">
+                      <li><a href="#">All Categories</a></li>
+                      <li><a href="#">Music</a></li>
+                      <li><a href="#">Artists</a></li>
+                      <li><a href="#">News + Artists</a></li>
+                      <li><a href="#">Food</a></li>
+                    </ul>
+                  </div>
+                  <div class="small-12 large-6 columns links pages">
+                    <p class="medium-label">Pages</p>
+                    <ul class="basic small-up-2">
+                      <li class="column-block column"><a href="#">Home</a></li>
+                      <li class="column-block column"><a href="#">About</a></li>
+                      <li class="column-block column"><a href="#">Events</a></li>
+                      <li class="column-block column"><a href="#">Workshops</a></li>
+                      <li class="column-block column"><a href="#">Apply</a></li>
+                      <li class="column-block column"><a href="#">Volunteer</a></li>
+                      <li class="column-block column"><a href="#">Gallery</a></li>
+                      <li class="column-block column"><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="small-12 large-3 columns links sign-in">
+                    <p class="medium-label">Sign-In Required</p>
+                    <ul class="basic">
+                      <li><a href="#">Volunteer info</a></li>
+                      <li><a href="#">Artist info</a></li>
+                      <li><a href="#">Musician</a></li>
+                      <li><a href="#">Food Vendor info</a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="small-12 medium-1 large-1 columns">
+                <img src="http://dummyimage.com/60x60/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div> {# off-canvas-content #}
+    </div> {# off-canvas-wrapper #}
   </body>
 </html>
